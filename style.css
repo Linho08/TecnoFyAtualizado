@@ -1,5 +1,23 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(93,224,230);
+    background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
+}
+
 .navbar-toggler-icon {
     border: 2px solid #004AAD;
+}
+
+.jumbotron {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: rgb(93,224,230);
+    background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
+    /* font-family: 'Arvo', sans-serif; */
 }
 
 .btn:hover {
