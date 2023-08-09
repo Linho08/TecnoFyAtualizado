@@ -1,3 +1,16 @@
-body {
-    background: linear-gradient(178.41deg, rgba(112, 0, 255, 0.8) 30%, rgba(34, 8, 243, 0.8) 70%) no-repeat;
+.navbar-toggler-icon {
+    border: 2px solid #004AAD;
+}
+
+.btn:hover {
+    background-color: #004AAD;
+    border: 2px solid #004AAD;
+    color: #5DE0E6;
+}
+
+.btn-outline-success {
+    color: #004AAD;
+    background-color: transparent;
+    background-image: none;
+    border-color: #004AAD;
 }
