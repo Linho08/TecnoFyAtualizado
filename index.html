@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Libre+Baskerville&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo&family=Libre+Baskerville&family=Merriweather:wght@300&display=swap"
+        rel="stylesheet">
 
     <title>T E C N O F Y</title>
 
@@ -20,10 +22,14 @@
 
 <body>
     <header>
+
         <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgb(93,224,230);
-        background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%); padding: 0.5rem 7rem;">
-            <a class="navbar-brand" href="#"><img src="Images/TecnoFy_Logo.png" alt=""
-                    style="width: 10rem; height: 10rem; border-radius: 50% ;"></a>
+        background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%); 
+        padding: 0.5rem 7rem;">
+            <a class="navbar-brand" href="#"><img src="Images/TecnoFy_Logo.png" alt="" style="width: 8rem; 
+                    height: 8rem; 
+                    border-radius: 50% ;">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
                 aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
@@ -31,7 +37,8 @@
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#"> Página Inicial <span class="sr-only">(página atual)</span></a>
+                        <a class="nav-link" href="#" id="pg"> Página Inicial <span class="sr-only">(página
+                                atual)</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -49,29 +56,16 @@
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" id="pesquisar" type="submit">Pesquisar</button>
                 </form>
             </div>
         </nav>
 
-        <!-- <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Ativo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Desativado</a>
-            </li>
-          </ul> -->
     </header>
 
     <main class="container_nav">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> <!-- Início Carrossel -->
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -96,7 +90,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Próximo</span>
             </a>
-        </div>
+        </div> <!-- Final Carrossel -->
 
         <br>
 
@@ -108,12 +102,16 @@
                 Technology For You
             </h2>
             <p class="lead">
-                É com grande entusiasmo que recebemos você no nosso site dedicado ao mundo da <br> 
-                tecnologia. Aqui, exploraremos juntos as maravilhas do universo digital, desde as mais <br> 
+                É com grande entusiasmo que recebemos você no nosso site dedicado ao mundo da <br>
+                tecnologia. Aqui, exploraremos juntos as maravilhas do universo digital, desde as mais <br>
                 recentes tendências até os conceitos fundamentais que moldam nosso futuro tecnológico.
             </p>
             <hr class="my-4">
-            <p>Ele usa classes utilitárias para tipografia e espaçamento de conteúdo, dentro do maior container.</p>
+            <p>
+                Capacitamos nossa comunidade a aprender em seu próprio ritmo sempre que for conveniente, <br>
+                e a partir do conforto de onde quer que esteja no mundo. Amplie seu horizonte e permita <br>
+                que sua criatividade seja livre.
+            </p>
             <a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a>
         </div>
 
@@ -121,127 +119,223 @@
 
         <div class="card-deck">
             <div class="card">
-                <img class="card-img-top" src="Images/Daniele 1.png" alt="Imagem de capa do card">
+                <a href="https://distrito.me/blog/novas-tecnologias-quais-as-tendencias-para-2023/">
+                    <img class="card-img-top" src="Images/TendenciasTecnologicas.jpg" alt="Imagem de capa do card">
+                </a>
                 <div class="card-body">
-                    <h5 class="card-title">Título do card</h5>
-                    <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma
-                        introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
-                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    <h5 class="card-title">
+                        As Tendências Mais Quentes em Tecnologia para 2023
+                    </h5>
+                    <p class="card-text">
+                        Estamos no meio de uma revolução tecnológica emocionante, e 2023 está
+                        repleto de inovações que estão moldando o futuro de maneiras surpreendentes.
+                        Neste artigo, exploraremos algumas das tendências mais quentes em tecnologia
+                        que estão dominando este ano e estão destinadas a ter um impacto duradouro.
+                    </p>
                 </div>
             </div>
+
             <div class="card">
-                <img class="card-img-top" src="Images/Pedro 1.png" alt="Imagem de capa do card">
+                <a
+                    href="https://sebrae.com.br/sites/PortalSebrae/artigos/o-que-e-realidade-aumentada-e-realidade-virtual,9da08ec38f685810VgnVCM100000d701210aRCRD">
+                    <img class="card-img-top" src="Images/realidade-virtual.jpg" alt="Imagem de capa do card">
+                </a>
                 <div class="card-body">
-                    <h5 class="card-title">Título do card</h5>
-                    <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a
-                        um conteúdo adicional.</p>
-                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    <h5 class="card-title">
+                        A Ascensão da Realidade Virtual e Aumentada
+                    </h5>
+                    <p class="card-text">
+                        A Realidade Virtual (RV) e a Realidade Aumentada (RA) estão finalmente saindo
+                        das sombras e se tornando uma parte essencial de várias indústrias. Desde
+                        jogos imersivos até treinamento profissional e educação, a RV e o RA estão
+                        animados a maneira como interagimos com o mundo digital. Empresas líderes
+                        como Oculus, HTC e Microsoft estão lançando dispositivos impressionantes que
+                        prometem levar essas tecnologias a novos patamares.
+                    </p>
                 </div>
             </div>
+
             <div class="card">
-                <img class="card-img-top" src="Images/LogoTecnoFy.jfif" alt="Imagem de capa do card">
+                <a
+                    href="https://www.autentify.com.br/marketing/velocidade-5g-como-a-tecnologia-5g-esta-revolucionando-a-conectividade-e-a-comunicacao/#:~:text=Velocidade%205G%3A%20A%20revolu%C3%A7%C3%A3o%20da%20conectividade%20e%20da%20comunica%C3%A7%C3%A3o&text=A%20velocidade%20de%20conex%C3%A3o%205G,em%20alta%20defini%C3%A7%C3%A3o%20sem%20interrup%C3%A7%C3%B5es.">
+                    <img class="card-img-top" src="Images/5G.png" alt="Imagem de capa do card">
+                </a>
                 <div class="card-body">
-                    <h5 class="card-title">Título do card</h5>
-                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma
-                        introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para
-                        mostrar a altura igual, em ação.</p>
-                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    <h5 class="card-title">
+                        5G: A Revolução na Conectividade
+                    </h5>
+                    <p class="card-text">
+                        A implementação do 5G está causando ondas de choque na indústria de
+                        telecomunicações. Com velocidades de download ultrarrápidas e latência
+                        mínima, o 5G está permitindo avanços em áreas como carros autônomos,
+                        cidades inteligentes e Internet das Coisas (IoT). À medida que mais redes 5G são
+                        lançadas em todo o mundo, podemos esperar uma transformação digital
+                        completa em como os dispositivos se comunicam e interagem.
+                    </p>
                 </div>
             </div>
         </div>
+
         <br>
-        <div class="jumbotron jumbotron-fluid">
+
+
+
+        <div class="jumbotron jumbotron-fluid"> <!-- Início da Introdução sobre Computação Quântica -->
             <div class="container">
-                <h1 class="display-4">Fluid jumbotron</h1>
-                <p class="lead">Este é um jumbotron modificado que ocupa todo o espaço horizontal de seu elemento pai.
+                <h1 class="display-4">
+                    A Era da Computação Quântica
+                </h1>
+                <p class="lead">
+                    A computação quântica é uma fronteira emocionante na tecnologia, prometendo resolver problemas
+                    complexos que estão além do alcance dos computadores tradicionais. Embora ainda estejam em
+                    suas aspirações iniciais, empresas como IBM, Google e Microsoft estão fazendo sucesso na
+                    construção de computadores quânticos funcionais. À medida que essa tecnologia se desenvolve,
+                    podemos esperar avanços revolucionários em áreas como criptografia, simulação molecular e
+                    otimização.
+                </p>
+                <br>
+                <p class="lead1">
+                    O ano de 2023 está repleto de emocionantes avanços tecnológicos que estão envolvendo nossas vidas de
+                    maneiras que nunca tiveram imaginado. Desde a realidade virtual até a computação quântica, estamos
+                    testemunhando uma era de inovação que está moldando o nosso futuro de maneira profunda e
+                    inspiradora.
+                    Portanto, fique atento a essas tendências e prepare-se para uma jornada empolgante no mundo da
+                    tecnologia.
                 </p>
             </div>
-        </div>
+        </div> <!-- Final da Introdução sobre Computação Quântica -->
+
         <br>
-        <nav id="navbar-exemplo2" class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a class="nav-link" href="#fat">@fat</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#mdo">@mdo</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#um">um</a>
-                        <a class="dropdown-item" href="#dois">dois</a>
-                        <div role="separator" class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#tres">tres</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+
+        <ul class="nav justify-content-center" id="nav-two">
+            <li class="nav-item">
+                <a class="nav-link active" href="#principios">Princípios Fundamentais</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#avancos">Avanços Tecnológicos</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Mais
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#impacto">Impacto </a>
+                    <a class="dropdown-item" href="#etica_desafio">Ética e Desafios</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#conclusao">Conclusão</a>
+                </div>
+            </li>
+        </ul>
+
         <br>
+        <br>
+
         <div data-spy="scroll" data-target="#navbar-exemplo2" data-offset="0">
-            <h4 id="fat">@fat</h4>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-                Lorem Ipsum has been the industry's standard dummy text ever since the <br>
-                1500s, when an unknown printer took a galley of type and scrambled it to <br>
-                make a type specimen book. It has survived not only five centuries, but <br>
-                also the leap into electronic typesetting, remaining essentially unchanged. <br>
-                It was popularised in the 1960s with the release of Letraset sheets <br>
-                containing Lorem Ipsum passages, and more recently with desktop publishing <br>
-                software like Aldus PageMaker including versions of Lorem Ipsum. <br>
-            </p>
 
-            <h4 id="mdo">@mdo</h4>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-                Lorem Ipsum has been the industry's standard dummy text ever since the <br>
-                1500s, when an unknown printer took a galley of type and scrambled it to <br>
-                make a type specimen book. It has survived not only five centuries, but <br>
-                also the leap into electronic typesetting, remaining essentially unchanged. <br>
-                It was popularised in the 1960s with the release of Letraset sheets <br>
-                containing Lorem Ipsum passages, and more recently with desktop publishing <br>
-                software like Aldus PageMaker including versions of Lorem Ipsum. <br>
-            </p>
 
-            <h4 id="um">um</h4>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-                Lorem Ipsum has been the industry's standard dummy text ever since the <br>
-                1500s, when an unknown printer took a galley of type and scrambled it to <br>
-                make a type specimen book. It has survived not only five centuries, but <br>
-                also the leap into electronic typesetting, remaining essentially unchanged. <br>
-                It was popularised in the 1960s with the release of Letraset sheets <br>
-                containing Lorem Ipsum passages, and more recently with desktop publishing <br>
-                software like Aldus PageMaker including versions of Lorem Ipsum. <br>
-            </p>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="Images/Princípios Fundamentais.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h4 id="principios">
+                            Princípios Fundamentais
+                        </h4>
+                        <p class="card-text">
+                            Para compreender a compreensão quântica, devemos mergulhar nos princípios
+                            fundamentais da mecânica quântica. Enquanto os computadores clássicos usam
+                            bits para representar informações como 0s e 1s, os computadores quânticos
+                            usam qubits. Diferente dos bits convencionais, os qubits podem existir em
+                            um estado de superposição, o que significa que eles podem representar 0,
+                            1 ou uma combinação dos dois simultaneamente. Além disso, os qubits podem
+                            estar entrelaçados, permitindo uma conexão intrincada que é a base para a
+                            capacidade de processamento exponencialmente rápido da computação quântica.
+                        </p>
+                    </div>
+                </div>
 
-            <h4 id="dois">dois</h4>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-                Lorem Ipsum has been the industry's standard dummy text ever since the <br>
-                1500s, when an unknown printer took a galley of type and scrambled it to <br>
-                make a type specimen book. It has survived not only five centuries, but <br>
-                also the leap into electronic typesetting, remaining essentially unchanged. <br>
-                It was popularised in the 1960s with the release of Letraset sheets <br>
-                containing Lorem Ipsum passages, and more recently with desktop publishing <br>
-                software like Aldus PageMaker including versions of Lorem Ipsum. <br>
-            </p>
+                <div class="card">
+                    <img class="card-img-top" src="Images/Avanços Tecnológicos.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h4 id="avancos">
+                            Avanços Tecnológicos
+                        </h4>
+                        <p class="card-text">
+                            Os avanços na tecnologia estão aproximando a computação quântica da realidade.
+                            Empresas como IBM, Google, Microsoft e várias startups estão trabalhando
+                            incansavelmente para construir computadores quânticos cada vez mais poderosos
+                            e estáveis. Eles enfrentam desafios técnicos complexos, como a manutenção da
+                            manipulação quântica, minimizando erros quânticos e escalando a arquitetura
+                            para manipular um grande número de qubits. À medida que esses desafios são
+                            superados, estamos nos aproximando da capacidade de resolver problemas que
+                            levaram anos ou décadas para serem resolvidos em questão de minutos.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-            <h4 id="tres">tres</h4>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-                Lorem Ipsum has been the industry's standard dummy text ever since the <br>
-                1500s, when an unknown printer took a galley of type and scrambled it to <br>
-                make a type specimen book. It has survived not only five centuries, but <br>
-                also the leap into electronic typesetting, remaining essentially unchanged. <br>
-                It was popularised in the 1960s with the release of Letraset sheets <br>
-                containing Lorem Ipsum passages, and more recently with desktop publishing <br>
-                software like Aldus PageMaker including versions of Lorem Ipsum. <br>
-            </p>
+            <br>
+            <br>
+
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="Images/Impacto.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h4 id="impacto">
+                            Impacto em Diversas Indústrias
+                        </h4>
+                        <p class="card-text">
+                            A computação quântica promete ter um impacto profundo em diversas indústrias.
+                            Na criptografia, por exemplo, a capacidade dos computadores quânticos de
+                            fatorar grandes em tempo hábil pode afetar a segurança de sistemas
+                            criptográficos convencionais. Além disso, a otimização, a simulação de comando
+                            complexo para desenvolvimento de medicamentos e o campo da inteligência
+                            artificial também devem se beneficiar das capacidades quânticas. As arquiteturas
+                            são vastas e ainda estamos arranhando a superfície do que é possível.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card-img-top" src="Images/Ética e Desafios.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h4 id="etica_desafio">
+                            Ética e Desafios
+                        </h4>
+                        <p class="card-text">
+                            Como toda inovação tecnológica, a computação quântica também apresenta desafios
+                            éticos e preocupações. Por exemplo, a capacidade dos computadores quânticos de
+                            quebrar a criptografia convencional levanta questões sobre a segurança dos dados
+                            e da privacidade. Além disso, devemos considerar como lidar com a corrida
+                            armamentista quântica, garantindo que essa tecnologia seja usada para o bem da
+                            humanidade. É crucial nessa medida que avançamos jornada, também levamos em
+                            consideração a ética ética e social.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card-img-top" src="Images/Conclusão.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h4 id="conclusao">
+                            Conclusão
+                        </h4>
+                        <p class="card-text">
+                            A era da computação quântica está se iniciando diante de nossos olhos, trazendo consigo uma
+                            promessa de soluções para desafios científicos, tecnológicos e sociais que pareciam
+                            insuperáveis. À medida que continuamos a manter os limites do que é possível, é importante
+                            permanecermos informados, engajados e vigilantes em relação aos desenvolvimentos nesse
+                            campo. A computação quântica tem o potencial de transformar nosso mundo de maneiras
+                            inimagináveis, e estamos apenas no começo dessa jornada emocionante.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
