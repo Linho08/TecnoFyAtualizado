@@ -1,3 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    line-height: 1.6em;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -41,7 +49,37 @@ body {
     align-items: center;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#teste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Images/TecnologiaBackground.avif);
+}
+
+#cadeado {
+    width: 15rem;
+    animation: floating 6s ease-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+
+    50% {
+        transform: translateY(-25px) rotate(4deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
 
 .jumbotron {
     color: white;
