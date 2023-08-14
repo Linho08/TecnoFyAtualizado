@@ -1,149 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Poppins:400,300,500);
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 body {
-  margin: 0;
-  padding: 96px;
-  font-size: 21px;
-  background: #fff;
-  color: #000;
-  font-family: "Poppins", sans-serif;
+  background: rgb(93, 224, 230);
+  background: linear-gradient(90deg, #004AAD 20%,
+          #5DE0E6 80%);
+  overflow-x: hidden;
+  font-size: 1rem;
 }
 
-section.card {
-  background: #000046;
-  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
-  background: linear-gradient(to right, #1CB5E0, #000046);
-  border-radius: 24px 24px 24px 48px;
-  padding: 48px 48px 48px 308px;
-  margin: 84px 0;
-  min-width: 640px;
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  position: relative;
-  box-shadow: 5px 0 0 0 rgba(204, 204, 204, 0.3), -5px 0 0 0 rgba(204, 204, 204, 0.3), 0 5px 0 0 rgba(204, 204, 204, 0.3);
+main {
+  display: grid;
+  grid-template-areas:
+      "header header header"
+      "aside article article"
+      "footer footer footer";
+  grid-template-rows: auto auto auto;
 }
 
-section.card .text-content {
-  display: flex;
-  flex-direction: column;
-  width: calc(60vw - 192px);
+header {
+  grid-area: header;
+  margin: 0px 0px 10px 0px;
+  background: rgb(93, 224, 230);
+  background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
+  padding: 0.5rem 7rem;
 }
 
-section.card .text-content h3 {
-  margin: 0;
-  font-size: 1.5em;
-  max-width: 20ch;
-  color: #fff;
-}
-
-section.card .text-content p {
-  margin: 25px 0 24px;
-  color: #fff;
-}
-
-section.card .text-content a {
-  border: 3px solid #f2f2f2;
-  color: #ffffff;
-  align-self: flex-start;
-  text-decoration: none;
-  padding: 16px 32px;
-  border-radius: 12px;
-  transition: 400ms all;
-}
-
-section.card .text-content a:hover {
-  background: #051c5e;
-  color: white;
-}
-
-section.card .visual {
-  width: 240px;
-  height: 100%;
-  position: absolute;
-  top: -24px;
-  left: 24px;
-  overflow: hidden;
-  border-radius: 24px;
-}
-
-section.card .visual img {
-  height: 110%;
+#logo {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
 }
 
 article {
-  margin: auto;
-  display: block;
-  width: calc(60vw + 248px);
-  max-width: calc(920px + 248px);
-  min-width: calc(640px + 248px);
+  grid-area: article;
+  margin: 0px 10px;
 }
 
-@media all and (max-width: 1100px) {
-  body {
-    padding: 96px 48px 24px;
-  }
-
-  article {
-    width: 100%;
-    min-width: 100%;
-  }
-
-  section.card {
-    min-width: 100%;
-  }
-
-  section.card .text-content {
-    width: 100%;
-  }
+aside {
+  grid-area: aside;
+  background: rgb(0, 74, 173);
+  background: linear-gradient(275deg, rgba(0, 74, 173, 0.8) 20%,
+          rgba(93, 224, 230, 0.8) 80%);
+  font-family: "Arvo", sans-serif;
 }
 
-@media all and (max-width: 720px) {
-  body {
-    padding: 48px 24px 0;
-  }
+footer {
+  grid-area: footer;
+  background: rgb(93, 224, 230);
+  background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
+}
 
-  section.card {
-    margin: 64px 0;
-    padding: 88px 36px 36px;
-    flex-direction: column;
-    border-radius: 24px;
-  }
+.navbar-toggler-icon {
+  border: 2px solid #004AAD;
+}
 
-  section.card .text-content h3 {
-    max-width: calc(100% - 150px);
-    font-size: 1em;
-  }
+#pg {
+  font-family: "Arvo", sans-serif;
+}
 
-  section.card .text-content p,
-  section.card .text-content a {
-    font-size: 0.8em;
-  }
+#navbarDropdown {
+  font-family: "Arvo", sans-serif;
+}
 
-  section.card .visual {
-    width: 150px;
-    height: 150px;
-    right: 16px;
-    left: auto;
-    border-radius: 50%;
-  }
+.dropdown-item {
+  font-family: "Arvo", sans-serif;
+}
 
-  section.card .visual img {
-    width: 100%;
-    height: auto;
-  }
+::placeholder {
+  font-family: "Arvo", sans-serif;
+}
+
+.jumbotron {
+  color: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: rgb(93, 224, 230);
+  background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
+}
+
+.btn:hover {
+  background-color: #004AAD;
+  border: 2px solid #004AAD;
+  color: #5DE0E6;
+}
+
+.btn-outline-success {
+  color: #004AAD;
+  background-color: transparent;
+  background-image: none;
+  border-color: #004AAD;
 }
