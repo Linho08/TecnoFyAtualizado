@@ -2,14 +2,13 @@
 <html lang="pt-br">
 
 <head>
-    <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylenav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,551 +17,302 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <title>T E C N O F Y</title>
-
 </head>
 
 <body>
-    <main class="container_nav">
+    <header>
 
-        <header>
-            <nav class="navbar  navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#"><img src="Images/TecnoFy_Logo.png" id="logo" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
-                    aria-label="Alterna navegação">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#" id="pg"> Página Inicial <span class="sr-only">(página
-                                    atual)</span></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Sobre
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#"> Equipe </a>
-                                <a class="dropdown-item" href="#">Projeto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
-                        </li>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgb(93,224,230);
+        background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%); 
+        padding: 0.5rem 7rem;">
+            <a class="navbar-brand" href="#"><img src="fotos/TecnoFy Logo.png" alt="" style="width: 8rem; 
+                    height: 8rem; 
+                    border-radius: 50% ;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="pg"> Página Inicial <span class="sr-only">(página
+                                atual)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sobre
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href=""> Equipe </a>
+                            <a href="https://www.web-leb.com/code"></a>
+                            <a class="dropdown-item" href="#">Projeto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Serviços
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="cursos.html"> Cursos </a>
-                                <a class="dropdown-item" href="#">Consultorias</a>
-                        </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Serviços
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"> Cursos </a>
+                            <a class="dropdown-item" href="#">Consultorias</a>
+                    </li>
 
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#"> <input class="form-control mr-sm-2" type="search"
-                                        placeholder="Pesquisar" aria-label="Pesquisar"> </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"> <input class="form-control mr-sm-2" type="search"
+                                    placeholder="Pesquisar" aria-label="Pesquisar"> </a>
+                    </li>
 
-        <article>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> <!-- Início Carrossel -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="Images/Desenvolvimento.jpg" alt="Primeiro Slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="Images/Ensinamentos.png" alt="Segundo Slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="Images/analise de sistema.jpg" alt="Terceiro Slide">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
-                </a>
-            </div> <!-- Final Carrossel -->
 
-            <br>
+                </ul>
+            </div>
+        </nav>
 
-            <div class="jumbotron">
-                <h1 class="display-4">
-                    Bem Vindo ao TecnoFy!
-                </h1>
-                <h2 class="display-5">
-                    Technology For You
-                </h2>
-                <p class="lead">
-                    É com grande entusiasmo que recebemos você no nosso site dedicado ao mundo da <br>
-                    tecnologia. Aqui, exploraremos juntos as maravilhas do universo digital, desde as mais <br>
-                    recentes tendências até os conceitos fundamentais que moldam nosso futuro tecnológico.
-                </p>
-                <hr class="my-4">
+    </header>
+
+
+    <article>
+        <section class="card">
+            <div class="text-content">
+                <h3>Pedro Henrique</h3>
                 <p>
-                    Capacitamos nossa comunidade a aprender em seu próprio ritmo sempre que for conveniente, <br>
-                    e a partir do conforto de onde quer que esteja no mundo. Amplie seu horizonte e permita <br>
-                    que sua criatividade seja livre. Para saber sobre os cursos, clique no botão abaixo.
-                </p>
-                <a class="btn btn-primary btn-lg" href="#cursos" role="button">Veja mais sobre os cursos</a>
+                    Suporte, Manutenção
+                    e Atualização.</p>
+                <p>Ajudamos nossos clientes a alcançar o mais alto nível de excelência operacional para que possam se
+                    concentrar no que importa - seu negócio principal. Por meio de nossa ampla gama de serviços,
+                    garantimos que nossos clientes fiquem à frente no cenário tecnológico em constante mudança</p>
+                <a href="https://www.web-leb.com/code">Join now</a>
             </div>
+            <div class="visual">
+                <img src="fotos/pedro teste.jfif" alt="" />
+            </div>
+        </section>
+    </article>
+    <article>
+        <section class="card">
+            <div class="text-content">
+                <h3>Paulo Souza</h3>
+                <p>
+                    Desenvolvimento de Sistemas </p>
+                <p>Na TecnoFy, damos vida à sua visão através de uma vasta gama de serviços de desenvolvimento web.
+                    Desde 2023, fornecemos aos clientes as ferramentas e habilidades para superar seus desafios online.
+                    Do conceito inicial ao resultado final, oferecemos atenção e orientação personalizada durante todo o
+                    processo. Como uma empresa de desenvolvimento de aplicativos líder do setor, temos a experiência e o
+                    histórico para ajudá-lo a ter sucesso na era digital atual. </p>
+                <a href="https://www.web-leb.com/code">Compre o Curso</a>
+            </div>
+            <div class="visual">
+                <img src="fotos/paulo teste.jfif" alt="" />
+            </div>
+        </section>
+    </article>
+    <article>
+        <section class="card">
+            <div class="text-content">
+                <h3>Jonathan Oliveira</h3>
+                <p>
+                    Levantamento e Análise de Requisitos</p>
+                <p>Desde a nossa fundação, trabalhamos com inúmeros clientes em toda a área. Um bom serviço começa e
+                    termina com profissionais experientes e amigáveis, e é por isso que nos preocupamos tanto em
+                    selecionar apenas os melhores para fazer parte de nossa equipe. Concluímos projetos com eficiência e
+                    dentro do cronograma, e vamos além para formar relacionamentos duradouros com nossos clientes.</p>
+                <a href="https://www.web-leb.com/code">Join now</a>
+            </div>
+            <div class="visual">
+                <img src="fotos/jhon teste.jfif" alt="" />
+            </div>
+        </section>
+    </article>
+    <article>
+        <section class="card">
+            <div class="text-content">
+                <h3>Filipe Rebouças</h3>
+                <p>
+                    Análise de Finanças </p>
+                <p>TecnoFy é onde compartilho com você o que mais me interessa, despertando sua empolgação para que você
+                    alimente suas próprias paixões e projetos. Espero que você goste do nosso site e de todo o conteúdo
+                    exclusivo que criamos. Todos nós precisamos de algo para nos motivar. Dê uma olhada ao redor; talvez
+                    você descubra o que o anima. Você está pronto para se inspirar?</p>
+                <a href="https://www.web-leb.com/code">Join now</a>
+            </div>
+            <div class="visual">
+                <img src="fotos/filipe teste.jfif" alt="" />
+            </div>
+        </section>
+    </article>
+    <article>
+        <section class="card">
+            <div class="text-content">
+                <h3>Ian Felipe</h3>
+                <p>
+                    Implementação e Documentação</p>
+                <p>Desde que comecei meu negócio, tenho trabalhado com um objetivo em mente: criar vídeos e conteúdo
+                    visual bonitos, únicos e instigantes. Graças à minha abordagem profissional, tive o privilégio de
+                    trabalhar com alguns dos maiores nomes da indústria. Sou apaixonado por criar histórias envolventes
+                    para o público de todo o mundo. Trabalho de perto com meus clientes, sempre colocando os planos e a
+                    visão do diretor em primeiro lugar. Confira meu portfólio para saber mais sobre o que posso fazer
+                    por você.</p>
+                <a href="https://www.web-leb.com/code">Join now</a>
+            </div>
+            <div class="visual">
+                <img src="fotos/ian teste.jfif" alt="" />
+            </div>
+        </section>
+    </article>
+    <article>
+        <section class="card">
+            <div class="text-content">
+                <h3>Danielle Dias</h3>
+                <p>
+                    Design de Projetos</p>
+                <p>Com a tecnologia digital abrindo caminho para o futuro, a necessidade de se destacar visualmente
+                    tornou-se mais essencial do que nunca. TecnoFy orgulha-se de ser um conceituado designer da zona do
+                    Brasil desde que iniciou o seu próprio negócio em 2023. Seu talento, raciocínio rápido e proeza
+                    criativa mantêm os clientes voltando para mais.</p>
+                <a href="https://www.web-leb.com/code">Join now</a>
+            </div>
+            <div class="visual">
+                <img src="fotos/danielle teste.jfif" alt="" />
+            </div>
+        </section>
+    </article>
 
-            <br>
+    <footer>
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-white text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Conecte-se conosco nas redes sociais:</span>
+                </div>
+                <!-- Left -->
 
-            <div class="card-deck">
-                <div class="card">
-                    <a href="https://distrito.me/blog/novas-tecnologias-quais-as-tendencias-para-2023/">
-                        <img class="card-img-top" src="Images/TendenciasTecnologicas.jpg" alt="Imagem de capa do card">
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 link-secondary" id="facebook">
+                        <i class="fab fa-facebook-f"></i>
                     </a>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            As Tendências Mais Quentes em Tecnologia para 2023
-                        </h5>
-                        <p class="card-text">
-                            Estamos no meio de uma revolução tecnológica emocionante, e 2023 está
-                            repleto de inovações que estão moldando o futuro de maneiras surpreendentes.
-                            Neste artigo, exploraremos algumas das tendências mais quentes em tecnologia
-                            que estão dominando este ano e estão destinadas a ter um impacto duradouro.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <a
-                        href="https://sebrae.com.br/sites/PortalSebrae/artigos/o-que-e-realidade-aumentada-e-realidade-virtual,9da08ec38f685810VgnVCM100000d701210aRCRD">
-                        <img class="card-img-top" src="Images/realidade-virtual.jpg" alt="Imagem de capa do card">
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-twitter"></i>
                     </a>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            A Ascensão da Realidade Virtual e Aumentada
-                        </h5>
-                        <p class="card-text">
-                            A Realidade Virtual (RV) e a Realidade Aumentada (RA) estão finalmente saindo
-                            das sombras e se tornando uma parte essencial de várias indústrias. Desde
-                            jogos imersivos até treinamento profissional e educação, a RV e o RA estão
-                            animados a maneira como interagimos com o mundo digital. Empresas líderes
-                            como Oculus, HTC e Microsoft estão lançando dispositivos impressionantes que
-                            prometem levar essas tecnologias a novos patamares.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <a
-                        href="https://www.autentify.com.br/marketing/velocidade-5g-como-a-tecnologia-5g-esta-revolucionando-a-conectividade-e-a-comunicacao/#:~:text=Velocidade%205G%3A%20A%20revolu%C3%A7%C3%A3o%20da%20conectividade%20e%20da%20comunica%C3%A7%C3%A3o&text=A%20velocidade%20de%20conex%C3%A3o%205G,em%20alta%20defini%C3%A7%C3%A3o%20sem%20interrup%C3%A7%C3%B5es.">
-                        <img class="card-img-top" src="Images/5G.png" alt="Imagem de capa do card">
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-google"></i>
                     </a>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            5G: A Revolução na Conectividade
-                        </h5>
-                        <p class="card-text">
-                            A implementação do 5G está causando ondas de choque na indústria de
-                            telecomunicações. Com velocidades de download ultrarrápidas e latência
-                            mínima, o 5G está permitindo avanços em áreas como carros autônomos,
-                            cidades inteligentes e Internet das Coisas (IoT). À medida que mais redes 5G são
-                            lançadas em todo o mundo, podemos esperar uma transformação digital
-                            completa em como os dispositivos se comunicam e interagem.
-                        </p>
-                    </div>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-github"></i>
+                    </a>
                 </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                            </h6>
+                            <p>
+                                you can rows columns to organize your footer content. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Angular</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">React</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Vue</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Laravel</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Pricing</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Settings</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Orders</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+                            <p>
+                                <i class="fas fa-envelope me-3 text-secondary"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+                © 2021 Copyright:
+                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
             </div>
-
-            <br>
-
-            <div class="jumbotron jumbotron-fluid" id="computacao_quatica">
-                <!-- Início da Introdução sobre Computação Quântica -->
-                <div class="container">
-                    <h1 class="display-4">
-                        A Era da Computação Quântica
-                    </h1>
-                    <p class="lead">
-                        A computação quântica é uma fronteira emocionante na tecnologia, prometendo resolver problemas
-                        complexos que estão além do alcance dos computadores tradicionais. Embora ainda estejam em
-                        suas aspirações iniciais, empresas como IBM, Google e Microsoft estão fazendo sucesso na
-                        construção de computadores quânticos funcionais. À medida que essa tecnologia se desenvolve,
-                        podemos esperar avanços revolucionários em áreas como criptografia, simulação molecular e
-                        otimização.
-                    </p>
-                    <br>
-                    <p class="lead1">
-                        O ano de 2023 está repleto de emocionantes avanços tecnológicos que estão envolvendo nossas
-                        vidas de
-                        maneiras que nunca tiveram imaginado. Desde a realidade virtual até a computação quântica,
-                        estamos
-                        testemunhando uma era de inovação que está moldando o nosso futuro de maneira profunda e
-                        inspiradora.
-                        Portanto, fique atento a essas tendências e prepare-se para uma jornada empolgante no mundo da
-                        tecnologia.
-                    </p>
-                </div>
-            </div> <!-- Final da Introdução sobre Computação Quântica -->
-
-            <br>
-
-            <div data-spy="scroll" data-target="#navbar-exemplo2" data-offset="0">
-
-                <div class="card-deck">
-                    <div class="card" id="principios">
-                        <img class="card-img-top" src="Images/Princípios Fundamentais.jpg" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h4>
-                                Princípios Fundamentais
-                            </h4>
-                            <p class="card-text">
-                                Para compreender a compreensão quântica, devemos mergulhar nos princípios
-                                fundamentais da mecânica quântica. Enquanto os computadores clássicos usam
-                                bits para representar informações como 0s e 1s, os computadores quânticos
-                                usam qubits. Diferente dos bits convencionais, os qubits podem existir em
-                                um estado de superposição, o que significa que eles podem representar 0,
-                                1 ou uma combinação dos dois simultaneamente. Além disso, os qubits podem
-                                estar entrelaçados, permitindo uma conexão intrincada que é a base para a
-                                capacidade de processamento exponencialmente rápido da computação quântica.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card" id="avancos">
-                        <img class="card-img-top" src="Images/Avanços Tecnológicos.png" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h4>
-                                Avanços Tecnológicos
-                            </h4>
-                            <p class="card-text">
-                                Os avanços na tecnologia estão aproximando a computação quântica da realidade.
-                                Empresas como IBM, Google, Microsoft e várias startups estão trabalhando
-                                incansavelmente para construir computadores quânticos cada vez mais poderosos
-                                e estáveis. Eles enfrentam desafios técnicos complexos, como a manutenção da
-                                manipulação quântica, minimizando erros quânticos e escalando a arquitetura
-                                para manipular um grande número de qubits. À medida que esses desafios são
-                                superados, estamos nos aproximando da capacidade de resolver problemas que
-                                levaram anos ou décadas para serem resolvidos em questão de minutos.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-                <br>
-
-                <div class="card-deck">
-                    <div class="card" id="impacto">
-                        <img class="card-img-top" src="Images/Impacto.jpg" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h4>
-                                Impacto em Diversas Indústrias
-                            </h4>
-                            <p class="card-text">
-                                A computação quântica promete ter um impacto profundo em diversas indústrias.
-                                Na criptografia, por exemplo, a capacidade dos computadores quânticos de
-                                fatorar grandes em tempo hábil pode afetar a segurança de sistemas
-                                criptográficos convencionais. Além disso, a otimização, a simulação de comando
-                                complexo para desenvolvimento de medicamentos e o campo da inteligência
-                                artificial também devem se beneficiar das capacidades quânticas. As arquiteturas
-                                são vastas e ainda estamos arranhando a superfície do que é possível.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card" id="etica_desafio">
-                        <img class="card-img-top" src="Images/Ética e Desafios.jpg" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h4>
-                                Ética e Desafios
-                            </h4>
-                            <p class="card-text">
-                                Como toda inovação tecnológica, a computação quântica também apresenta desafios
-                                éticos e preocupações. Por exemplo, a capacidade dos computadores quânticos de
-                                quebrar a criptografia convencional levanta questões sobre a segurança dos dados
-                                e da privacidade. Além disso, devemos considerar como lidar com a corrida
-                                armamentista quântica, garantindo que essa tecnologia seja usada para o bem da
-                                humanidade. É crucial nessa medida que avançamos jornada, também levamos em
-                                consideração a ética ética e social.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card" id="conclusao">
-                        <img class="card-img-top" src="Images/Conclusão.jpg" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h4>
-                                Conclusão
-                            </h4>
-                            <p class="card-text">
-                                A era da computação quântica está se iniciando diante de nossos olhos, trazendo consigo
-                                uma
-                                promessa de soluções para desafios científicos, tecnológicos e sociais que pareciam
-                                insuperáveis. À medida que continuamos a manter os limites do que é possível, é
-                                importante
-                                permanecermos informados, engajados e vigilantes em relação aos desenvolvimentos nesse
-                                campo. A computação quântica tem o potencial de transformar nosso mundo de maneiras
-                                inimagináveis, e estamos apenas no começo dessa jornada emocionante.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-            <br>
-
-            <div class="jumbotron jumbotron-fluid" id="cursos">
-                <div class="container">
-                    <h1 class="display-4">
-                        Nossos Cursos!
-                    </h1>
-                    <p class="lead">
-                        Mostraremos abaixo as diversas áreas em que nosso site fornece cursos e docentes para estar
-                        tirando dúvidas!
-                    </p>
-                </div>
-            </div>
-
-            <br>
-            <br>
-
-            <div class="card-columns">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Levantamento e Análise de Requisitos
-                        </h5>
-                        <p class="card-text">
-                            Este é um card com suporte a texto embaixo, que funciona como uma
-                            introdução a
-                            um conteúdo adicional.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card p-3">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Análise de Finanças
-                        </h5>
-                        <p class="card-text">
-                            Este é um card com suporte a texto embaixo, que funciona como uma
-                            introdução a
-                            um conteúdo adicional.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Design de Projetos
-                        </h5>
-                        <p class="card-text">
-                            Este é um card com suporte a texto embaixo, que funciona como uma
-                            introdução a
-                            um conteúdo adicional.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Suporte, Manutenção e Atualização
-                        </h5>
-                        <p class="card-text">
-                            Este é um card com suporte a texto embaixo, que funciona como uma
-                            introdução a
-                            um conteúdo adicional.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card p-3 text-right">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Desenvolvimento de Sistemas
-                        </h5>
-                        <p class="card-text">
-                            Este é um card com suporte a texto embaixo, que funciona como uma
-                            introdução a
-                            um conteúdo adicional.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Implementação e Documentação
-                        </h5>
-                        <p class="card-text">
-                            Este é um card com suporte a texto embaixo, que funciona como uma
-                            introdução a
-                            um conteúdo adicional.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <aside>
-            <nav class="nav flex-column">
-                <a class="nav-link" href="#computacao_quatica">Computação Quântica</a>
-                <a class="nav-link" href="#principios">Princípios Fundamentais</a>
-                <a class="nav-link" href="#avancos">Avanços Tecnológicos</a>
-                <a class="nav-link" href="#impacto">Impacto</a>
-                <a class="nav-link" href="#etica_desafio">Ética e Desafios</a>
-                <a class="nav-link" href="#conclusao">Conclusão</a>
-            </nav>
-        </aside>
-
-        <footer>
-            <!-- Footer -->
-            <footer class="text-center text-lg-start bg-white text-muted">
-                <!-- Section: Social media -->
-                <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-                    <!-- Left -->
-                    <div class="me-5 d-none d-lg-block" id="redes">
-                        <span>Conecte-se conosco nas redes sociais:</span>
-                    </div>
-                    <!-- Left -->
-
-                    <!-- Right -->
-                    <div>
-                        <a href="" class="me-4 link-secondary" id="facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="" class="me-4 link-secondary">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="" class="me-4 link-secondary">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="" class="me-4 link-secondary">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="" class="me-4 link-secondary">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="" class="me-4 link-secondary">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                    <!-- Right -->
-                </section>
-                <!-- Section: Social media -->
-
-                <!-- Section: Links  -->
-                <section class="">
-                    <div class="container text-center text-md-start mt-5">
-                        <!-- Grid row -->
-                        <div class="row mt-3">
-                            <!-- Grid column -->
-                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                                <!-- Content -->
-                                <h6 class="text-uppercase fw-bold mb-4" id="footer_company">
-                                    <img src="Images/TecnoFy Logo.png" alt="" id="logo">
-                                    TecnoFy
-                                </h6>
-                                <p>
-                                    you can rows columns to organize your footer content. Lorem ipsum
-                                    dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                                <!-- Links -->
-                                <h6 class="text-uppercase fw-bold mb-4">
-                                    Products
-                                </h6>
-                                <p>
-                                    <a href="#!" class="text-reset">Angular</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">React</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Vue</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Laravel</a>
-                                </p>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                                <!-- Links -->
-                                <h6 class="text-uppercase fw-bold mb-4">
-                                    Useful links
-                                </h6>
-                                <p>
-                                    <a href="#!" class="text-reset">Pricing</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Settings</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Orders</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Help</a>
-                                </p>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                                <!-- Links -->
-                                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                                <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
-                                <p>
-                                    <i class="fas fa-envelope me-3 text-secondary"></i>
-                                    info@example.com
-                                </p>
-                                <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
-                                <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
-                            </div>
-                            <!-- Grid column -->
-                        </div>
-                        <!-- Grid row -->
-                    </div>
-                </section>
-                <!-- Section: Links  -->
-
-                <!-- Copyright -->
-                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-                    © 2021 Copyright:
-                    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-                </div>
-                <!-- Copyright -->
-            </footer>
-            <!-- Footer -->
+            <!-- Copyright -->
         </footer>
+        <!-- Footer -->
+    </footer>
 
-    </main>
 
 
     <!-- JavaScript (Opcional) -->
@@ -576,6 +326,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
