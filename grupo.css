@@ -12,8 +12,8 @@ html {
 
 body {
     background: rgb(93, 224, 230);
-    background: linear-gradient(90deg, #004AAD 20%, 
-    #5DE0E6 80%);
+    background: linear-gradient(90deg, #004AAD 20%,
+            #5DE0E6 80%);
     overflow-x: hidden;
     font-size: 1rem;
 }
@@ -43,7 +43,7 @@ body {
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    background-color: black ;
+    background-color: black;
 }
 
 #nav-two {
