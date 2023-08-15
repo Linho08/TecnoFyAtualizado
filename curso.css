@@ -119,5 +119,10 @@ footer {
 .card{
   color: white;
   background: #004AAD;
-
+}
+.card-link{
+  color: #5DE0E6;
+}
+.card-subtitle{
+  color: #5DE0E6;
 }
