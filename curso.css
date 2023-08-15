@@ -83,7 +83,7 @@ footer {
 .jumbotron {
   color: white;
   display: grid;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   background: rgb(93, 224, 230);
   background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
@@ -100,4 +100,8 @@ footer {
   background-color: transparent;
   background-image: none;
   border-color: #004AAD;
+}
+.card-deck{
+  margin: auto;
+  margin: 15px;
 }
