@@ -11,9 +11,9 @@ html {
 }
 
 body {
-  background: rgb(93, 224, 230);
+  /* background: rgb(93, 224, 230);
   background: linear-gradient(90deg, #004AAD 20%,
-          #5DE0E6 80%);
+          #5DE0E6 80%); */
   overflow-x: hidden;
   font-size: 1rem;
 }
@@ -83,7 +83,7 @@ footer {
 .jumbotron {
   color: white;
   display: grid;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   background: rgb(93, 224, 230);
   background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
@@ -101,7 +101,23 @@ footer {
   background-image: none;
   border-color: #004AAD;
 }
+
+#redes {
+  color: white;
+  font-family: 'Merriweather', sans-serif;
+}
+
+#footer_company {
+  color: white;
+  font-family: 'Arvo', sans-serif;
+}
 .card-deck{
   margin: auto;
   margin: 15px;
+  
+}
+.card{
+  color: white;
+  background: #004AAD;
+
 }
