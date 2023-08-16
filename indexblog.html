@@ -26,8 +26,10 @@
 <body>
     <main class="container_nav">
 
+        <script src="/js/main.js"></script>
+
         <header>
-            <nav class="navbar  navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="#"><img src="Images/TecnoFy_Logo.png" id="logo" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -38,9 +40,10 @@
                 <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="indexblog.html" id="pg"> Página Inicial <span class="sr-only">(página
-                                    atual)</span></a>
+                            <a class="nav-link" href="indexblog.html" id="pg"> Página Inicial <span
+                                    class="sr-only">(página atual)</span></a>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,9 +53,6 @@
                                 <a class="dropdown-item" href="grupo.html"> Equipe </a>
                                 <a class="dropdown-item" href="#">Projeto</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
-                        </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -61,20 +61,21 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="cursos.html"> Cursos </a>
-                                <a class="dropdown-item" href="consulta.html">Consultorias</a>
+                                <a class="dropdown-item" href="#">Consultorias</a>
                         </li>
 
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#"> <input class="form-control mr-sm-2" type="search"
-                                        placeholder="Pesquisar" aria-label="Pesquisar"> </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
                         </li>
+
                     </ul>
+                    <a href="login.html" class="nav-link">
+                        <i class="fa-solid fa-user fa-bounce fa-2xl"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-gear fa-bounce fa-2xl"></i>
+                    </a>
                 </div>
             </nav>
         </header>
@@ -193,135 +194,64 @@
 
             <br>
 
-            <div class="jumbotron jumbotron-fluid" id="computacao_quatica">
-                <!-- Início da Introdução sobre Computação Quântica -->
-                <div class="container">
-                    <h1 class="display-4">
-                        A Era da Computação Quântica
-                    </h1>
-                    <p class="lead">
-                        A computação quântica é uma fronteira emocionante na tecnologia, prometendo resolver problemas
-                        complexos que estão além do alcance dos computadores tradicionais. Embora ainda estejam em
-                        suas aspirações iniciais, empresas como IBM, Google e Microsoft estão fazendo sucesso na
-                        construção de computadores quânticos funcionais. À medida que essa tecnologia se desenvolve,
-                        podemos esperar avanços revolucionários em áreas como criptografia, simulação molecular e
-                        otimização.
-                    </p>
-                    <br>
-                    <p class="lead1">
-                        O ano de 2023 está repleto de emocionantes avanços tecnológicos que estão envolvendo nossas
-                        vidas de
-                        maneiras que nunca tiveram imaginado. Desde a realidade virtual até a computação quântica,
-                        estamos
-                        testemunhando uma era de inovação que está moldando o nosso futuro de maneira profunda e
-                        inspiradora.
-                        Portanto, fique atento a essas tendências e prepare-se para uma jornada empolgante no mundo da
-                        tecnologia.
-                    </p>
-                </div>
-            </div> <!-- Final da Introdução sobre Computação Quântica -->
-
-            <br>
-
-            <div data-spy="scroll" data-target="#navbar-exemplo2" data-offset="0">
-
-                <div class="card-deck">
-                    <div class="card" id="principios">
-                        <img class="card-img-top" src="Images/Princípios Fundamentais.jpg" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h4>
-                                Princípios Fundamentais
-                            </h4>
-                            <p class="card-text">
-                                Para compreender a compreensão quântica, devemos mergulhar nos princípios
-                                fundamentais da mecânica quântica. Enquanto os computadores clássicos usam
-                                bits para representar informações como 0s e 1s, os computadores quânticos
-                                usam qubits. Diferente dos bits convencionais, os qubits podem existir em
-                                um estado de superposição, o que significa que eles podem representar 0,
-                                1 ou uma combinação dos dois simultaneamente. Além disso, os qubits podem
-                                estar entrelaçados, permitindo uma conexão intrincada que é a base para a
-                                capacidade de processamento exponencialmente rápido da computação quântica.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card" id="avancos">
-                        <img class="card-img-top" src="Images/Avanços Tecnológicos.png" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h4>
-                                Avanços Tecnológicos
-                            </h4>
-                            <p class="card-text">
-                                Os avanços na tecnologia estão aproximando a computação quântica da realidade.
-                                Empresas como IBM, Google, Microsoft e várias startups estão trabalhando
-                                incansavelmente para construir computadores quânticos cada vez mais poderosos
-                                e estáveis. Eles enfrentam desafios técnicos complexos, como a manutenção da
-                                manipulação quântica, minimizando erros quânticos e escalando a arquitetura
-                                para manipular um grande número de qubits. À medida que esses desafios são
-                                superados, estamos nos aproximando da capacidade de resolver problemas que
-                                levaram anos ou décadas para serem resolvidos em questão de minutos.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-                <br>
-
-                <div class="card-deck">
-                    <div class="card" id="impacto">
+            <div class="card-deck">
+                <div class="card">
+                    <a href="https://www.castgroup.com.br/o-que-e-computacao-quantica-e-por-que-ela-e-o-futuro/">
                         <img class="card-img-top" src="Images/Impacto.jpg" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h4>
-                                Impacto em Diversas Indústrias
-                            </h4>
-                            <p class="card-text">
-                                A computação quântica promete ter um impacto profundo em diversas indústrias.
-                                Na criptografia, por exemplo, a capacidade dos computadores quânticos de
-                                fatorar grandes em tempo hábil pode afetar a segurança de sistemas
-                                criptográficos convencionais. Além disso, a otimização, a simulação de comando
-                                complexo para desenvolvimento de medicamentos e o campo da inteligência
-                                artificial também devem se beneficiar das capacidades quânticas. As arquiteturas
-                                são vastas e ainda estamos arranhando a superfície do que é possível.
-                            </p>
-                        </div>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            A Era da Computação Quântica
+                        </h5>
+                        <p class="card-text">
+                            A computação quântica é uma fronteira emocionante na tecnologia, prometendo resolver
+                            problemas
+                            complexos que estão além do alcance dos computadores tradicionais. Embora ainda estejam em
+                            suas aspirações iniciais, empresas como IBM, Google e Microsoft estão fazendo sucesso na
+                            construção de computadores quânticos funcionais. À medida que essa tecnologia se desenvolve,
+                            podemos esperar avanços revolucionários em áreas como criptografia, simulação molecular e
+                            otimização.
+                        </p>
                     </div>
+                </div>
 
-                    <div class="card" id="etica_desafio">
-                        <img class="card-img-top" src="Images/Ética e Desafios.jpg" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h4>
-                                Ética e Desafios
-                            </h4>
-                            <p class="card-text">
-                                Como toda inovação tecnológica, a computação quântica também apresenta desafios
-                                éticos e preocupações. Por exemplo, a capacidade dos computadores quânticos de
-                                quebrar a criptografia convencional levanta questões sobre a segurança dos dados
-                                e da privacidade. Além disso, devemos considerar como lidar com a corrida
-                                armamentista quântica, garantindo que essa tecnologia seja usada para o bem da
-                                humanidade. É crucial nessa medida que avançamos jornada, também levamos em
-                                consideração a ética ética e social.
-                            </p>
-                        </div>
+                <div class="card">
+                    <a
+                        href="https://sebrae.com.br/sites/PortalSebrae/artigos/o-que-e-realidade-aumentada-e-realidade-virtual,9da08ec38f685810VgnVCM100000d701210aRCRD">
+                        <img class="card-img-top" src="Images/realidade-virtual.jpg" alt="Imagem de capa do card">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            A Ascensão da Realidade Virtual e Aumentada
+                        </h5>
+                        <p class="card-text">
+                            A Realidade Virtual (RV) e a Realidade Aumentada (RA) estão finalmente saindo
+                            das sombras e se tornando uma parte essencial de várias indústrias. Desde
+                            jogos imersivos até treinamento profissional e educação, a RV e o RA estão
+                            animados a maneira como interagimos com o mundo digital. Empresas líderes
+                            como Oculus, HTC e Microsoft estão lançando dispositivos impressionantes que
+                            prometem levar essas tecnologias a novos patamares.
+                        </p>
                     </div>
+                </div>
 
-                    <div class="card" id="conclusao">
-                        <img class="card-img-top" src="Images/Conclusão.jpg" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h4>
-                                Conclusão
-                            </h4>
-                            <p class="card-text">
-                                A era da computação quântica está se iniciando diante de nossos olhos, trazendo consigo
-                                uma
-                                promessa de soluções para desafios científicos, tecnológicos e sociais que pareciam
-                                insuperáveis. À medida que continuamos a manter os limites do que é possível, é
-                                importante
-                                permanecermos informados, engajados e vigilantes em relação aos desenvolvimentos nesse
-                                campo. A computação quântica tem o potencial de transformar nosso mundo de maneiras
-                                inimagináveis, e estamos apenas no começo dessa jornada emocionante.
-                            </p>
-                        </div>
+                <div class="card">
+                    <a
+                        href="https://www.autentify.com.br/marketing/velocidade-5g-como-a-tecnologia-5g-esta-revolucionando-a-conectividade-e-a-comunicacao/#:~:text=Velocidade%205G%3A%20A%20revolu%C3%A7%C3%A3o%20da%20conectividade%20e%20da%20comunica%C3%A7%C3%A3o&text=A%20velocidade%20de%20conex%C3%A3o%205G,em%20alta%20defini%C3%A7%C3%A3o%20sem%20interrup%C3%A7%C3%B5es.">
+                        <img class="card-img-top" src="Images/5G.png" alt="Imagem de capa do card">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            5G: A Revolução na Conectividade
+                        </h5>
+                        <p class="card-text">
+                            A implementação do 5G está causando ondas de choque na indústria de
+                            telecomunicações. Com velocidades de download ultrarrápidas e latência
+                            mínima, o 5G está permitindo avanços em áreas como carros autônomos,
+                            cidades inteligentes e Internet das Coisas (IoT). À medida que mais redes 5G são
+                            lançadas em todo o mundo, podemos esperar uma transformação digital
+                            completa em como os dispositivos se comunicam e interagem.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -371,7 +301,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">
                             Design de Projetos
@@ -410,7 +340,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card p-3 text-right">
                     <div class="card-body">
                         <h5 class="card-title">
                             Implementação e Documentação
@@ -424,17 +354,6 @@
                 </div>
             </div>
         </article>
-
-        <aside>
-            <nav class="nav flex-column">
-                <a class="nav-link" href="#computacao_quatica">Computação Quântica</a>
-                <a class="nav-link" href="#principios">Princípios Fundamentais</a>
-                <a class="nav-link" href="#avancos">Avanços Tecnológicos</a>
-                <a class="nav-link" href="#impacto">Impacto</a>
-                <a class="nav-link" href="#etica_desafio">Ética e Desafios</a>
-                <a class="nav-link" href="#conclusao">Conclusão</a>
-            </nav>
-        </aside>
 
         <footer>
             <!-- Footer -->
