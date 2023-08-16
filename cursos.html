@@ -23,12 +23,8 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgb(93,224,230);
-        background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%); 
-        padding: 0.5rem 7rem;">
-            <a class="navbar-brand" href="#"><img src="Images/TecnoFy_Logo.png" alt="" style="width: 8rem; 
-                    height: 8rem; 
-                    border-radius: 50% ;">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#"><img src="Images/TecnoFy_Logo.png" id="logo" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
                 aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
@@ -37,9 +33,14 @@
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="indexblog.html" id="pg"> Página Inicial <span class="sr-only">(página
-                                atual)</span></a>
+                        <a class="nav-link" href="indexblog.html" id="pg">
+                            Página Inicial
+                            <span class="sr-only">
+                                (página atual)
+                            </span>
+                        </a>
                     </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -49,9 +50,6 @@
                             <a class="dropdown-item" href="grupo.html"> Equipe </a>
                             <a class="dropdown-item" href="#">Projeto</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -60,19 +58,22 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="cursos.html"> Cursos </a>
-                            <a class="dropdown-item" href="consulta.html">Consultorias</a>
+                            <a class="dropdown-item" href="#">Consultorias</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#"> <input class="form-control mr-sm-2" type="search"
-                                    placeholder="Pesquisar" aria-label="Pesquisar"> </a>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Contato </a>
                     </li>
+
                 </ul>
-            </div>   
+                <a href="login.html" class="nav-link">
+                    <i class="fa-solid fa-user fa-bounce fa-2xl"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-gear fa-bounce fa-2xl"></i>
+                </a>
+            </div>
         </nav>
     </header>
     <div class="jumbotron">
@@ -96,22 +97,22 @@
                 <p class="card-text">
                     Neste curso, você aprenderá sobre os conceitos básicos e fundamentais de Redes Sociais e sobre o
                     Pacote Office, da Microsoft.
-                </p>             
+                </p>
                 <a href="https://www.ev.org.br/cursos/cultura-digital" class="card-link"><button type="button"
-                        class="btn btn-outline-info">Matricule-se já!</button></a><br>               
+                        class="btn btn-outline-info">Matricule-se já!</button></a><br>
                 <div class="rating">
-                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>	
+                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
                     <label for='rating_5'></label>
-                
+
                     <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
                     <label for='rating_4'></label>
-                
+
                     <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
                     <label for='rating_3'></label>
-                
+
                     <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
                     <label for='rating_2'></label>
-                
+
                     <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
                     <label for='rating_1'></label>
                 </div>
@@ -127,22 +128,22 @@
                 </p>
                 <a href="https://www.ev.org.br/cursos/implementando-banco-de-dados" class="card-link"><button
                         type="button" class="btn btn-outline-info">Matricule-se já!</button></a>
-                        <div class="rating">
-                            <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>	
-                            <label for='rating_5'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
-                            <label for='rating_4'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
-                            <label for='rating_3'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
-                            <label for='rating_2'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
-                            <label for='rating_1'></label>
-                        </div>
+                <div class="rating">
+                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
+                    <label for='rating_5'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
+                    <label for='rating_4'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
+                    <label for='rating_3'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
+                    <label for='rating_2'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
+                    <label for='rating_1'></label>
+                </div>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
@@ -156,22 +157,22 @@
                 </p>
                 <a href="https://www.ev.org.br/cursos/introducao-a-redes-de-computadores" class="card-link"><button
                         type="button" class="btn btn-outline-info">Matricule-se já!</button></a>
-                        <div class="rating">
-                            <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>	
-                            <label for='rating_5'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
-                            <label for='rating_4'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
-                            <label for='rating_3'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
-                            <label for='rating_2'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
-                            <label for='rating_1'></label>
-                        </div>
+                <div class="rating">
+                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
+                    <label for='rating_5'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
+                    <label for='rating_4'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
+                    <label for='rating_3'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
+                    <label for='rating_2'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
+                    <label for='rating_1'></label>
+                </div>
             </div>
         </div>
     </div>
@@ -186,22 +187,22 @@
                 </p>
                 <a href="https://www.ev.org.br/cursos/fundamentos-das-aplicacoes-moveis" class="card-link"><button
                         type="button" class="btn btn-outline-info">Matricule-se já!</button></a>
-                        <div class="rating">
-                            <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>	
-                            <label for='rating_5'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
-                            <label for='rating_4'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
-                            <label for='rating_3'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
-                            <label for='rating_2'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
-                            <label for='rating_1'></label>
-                        </div>
+                <div class="rating">
+                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
+                    <label for='rating_5'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
+                    <label for='rating_4'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
+                    <label for='rating_3'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
+                    <label for='rating_2'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
+                    <label for='rating_1'></label>
+                </div>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
@@ -216,22 +217,22 @@
                 </p>
                 <a href="https://www.ev.org.br/cursos/fundamentos-de-logica-de-programacao" class="card-link"><button
                         type="button" class="btn btn-outline-info">Matricule-se já!</button></a>
-                        <div class="rating">
-                            <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>	
-                            <label for='rating_5'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
-                            <label for='rating_4'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
-                            <label for='rating_3'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
-                            <label for='rating_2'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
-                            <label for='rating_1'></label>
-                        </div>
+                <div class="rating">
+                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
+                    <label for='rating_5'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
+                    <label for='rating_4'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
+                    <label for='rating_3'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
+                    <label for='rating_2'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
+                    <label for='rating_1'></label>
+                </div>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
@@ -246,22 +247,22 @@
                 </p>
                 <a href="https://www.ev.org.br/cursos/etica-no-desenvolvimento-de-sistemas" class="card-link"><button
                         type="button" class="btn btn-outline-info">Matricule-se já!</button></a>
-                        <div class="rating">
-                            <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>	
-                            <label for='rating_5'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
-                            <label for='rating_4'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
-                            <label for='rating_3'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
-                            <label for='rating_2'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
-                            <label for='rating_1'></label>
-                        </div>
+                <div class="rating">
+                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
+                    <label for='rating_5'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
+                    <label for='rating_4'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
+                    <label for='rating_3'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
+                    <label for='rating_2'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
+                    <label for='rating_1'></label>
+                </div>
             </div>
         </div>
     </div>
@@ -278,22 +279,22 @@
                 </p>
                 <a href="https://www.ev.org.br/cursos/modelagem-de-dados" class="card-link"><button type="button"
                         class="btn btn-outline-info">Matricule-se já!</button></a>
-                        <div class="rating">
-                            <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>	
-                            <label for='rating_5'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
-                            <label for='rating_4'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
-                            <label for='rating_3'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
-                            <label for='rating_2'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
-                            <label for='rating_1'></label>
-                        </div>
+                <div class="rating">
+                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
+                    <label for='rating_5'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
+                    <label for='rating_4'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
+                    <label for='rating_3'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
+                    <label for='rating_2'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
+                    <label for='rating_1'></label>
+                </div>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
@@ -308,22 +309,22 @@
                 </p>
                 <a href="https://www.ev.org.br/cursos/desenvolvendo-aplicacoes-mobile-com-android-studio"
                     class="card-link"><button type="button" class="btn btn-outline-info">Matricule-se já!</button></a>
-                    <div class="rating">
-                        <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>	
-                        <label for='rating_5'></label>
-                    
-                        <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
-                        <label for='rating_4'></label>
-                    
-                        <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
-                        <label for='rating_3'></label>
-                    
-                        <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
-                        <label for='rating_2'></label>
-                    
-                        <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
-                        <label for='rating_1'></label>
-                    </div>
+                <div class="rating">
+                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
+                    <label for='rating_5'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
+                    <label for='rating_4'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
+                    <label for='rating_3'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
+                    <label for='rating_2'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
+                    <label for='rating_1'></label>
+                </div>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
@@ -339,22 +340,22 @@
                 </p>
                 <a href="https://www.ev.org.br/cursos/projetos-de-sistemas-de-ti" class="card-link"><button
                         type="button" class="btn btn-outline-info">Matricule-se já!</button></a>
-                        <div class="rating">
-                            <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>	
-                            <label for='rating_5'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
-                            <label for='rating_4'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
-                            <label for='rating_3'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
-                            <label for='rating_2'></label>
-                        
-                            <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
-                            <label for='rating_1'></label>
-                        </div>
+                <div class="rating">
+                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
+                    <label for='rating_5'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
+                    <label for='rating_4'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
+                    <label for='rating_3'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
+                    <label for='rating_2'></label>
+
+                    <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
+                    <label for='rating_1'></label>
+                </div>
             </div>
         </div>
     </div>

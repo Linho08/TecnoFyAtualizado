@@ -21,9 +21,9 @@ body {
 main {
   display: grid;
   grid-template-areas:
-      "header header header"
-      "aside article article"
-      "footer footer footer";
+    "header header header"
+    "article article article"
+    "footer footer footer";
   grid-template-rows: auto auto auto;
 }
 
@@ -44,14 +44,6 @@ header {
 article {
   grid-area: article;
   margin: 0px 10px;
-}
-
-aside {
-  grid-area: aside;
-  background: rgb(0, 74, 173);
-  background: linear-gradient(275deg, rgba(0, 74, 173, 0.8) 20%,
-          rgba(93, 224, 230, 0.8) 80%);
-  font-family: "Arvo", sans-serif;
 }
 
 footer {
@@ -88,44 +80,48 @@ footer {
   background: rgb(93, 224, 230);
   background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
 }
-.card-deck{
+
+.card-deck {
   margin: auto;
   margin: 15px;
-  
+
 }
-.card{
+
+.card {
   color: white;
   background: #004AAD;
 }
-.card-link{
+
+.card-link {
   color: #5DE0E6;
 }
-.card-subtitle{
+
+.card-subtitle {
   color: #5DE0E6;
 }
+
 .rating {
-  float: right;
-  width: 100%;
-  height: 100%;
-  display: inline-block;
+  display: flex;
   font-size: 0;
   position: relative;
   text-transform: capitalize;
   padding: 0 15px 0 8%;
   color: gray;
 }
+
 .rating label {
-  display: inline-block;
-  float: right;
+  display: flex;
   padding: 0;
   font-size: 27px;
   cursor: pointer;
 }
+
 .rating label::before {
   content: "\2606";
   display: inline-block;
   transition: 0.2s;
 }
+
 .rating label span {
   opacity: 0;
   position: absolute;
@@ -141,25 +137,29 @@ footer {
   letter-spacing: -2px;
   transform: translateY(-50%);
 }
+
 .rating label:hover span {
   opacity: 1;
   transform: none;
   letter-spacing: 0;
 }
+
 .rating label:hover::before {
   color: orange;
   opacity: 0.6;
   filter: drop-shadow(0 0 4px);
 }
-.rating label:hover ~ *::before {
+
+.rating label:hover~*::before {
   color: orange;
   opacity: 0.6;
   filter: drop-shadow(0 0 4px);
 }
-.rating input:checked ~ label::before {
+
+.rating input:checked~label::before {
   content: "\2605";
   color: orange;
   filter: drop-shadow(0 0 4px);
   transform: rotate(0.2turn);
   transition-delay: calc(0.1 * attr(data-idx integer));
-}        
+}

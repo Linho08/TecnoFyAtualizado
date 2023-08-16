@@ -23,15 +23,12 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgb(93,224,230);
-        background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%); 
-        padding: 0.5rem 7rem;">
-            <a class="navbar-brand" href="#"><img src="Images/TecnoFy_Logo.png" alt="" style="width: 8rem; 
-                    height: 8rem; 
-                    border-radius: 50% ;">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#"><img src="Images/TecnoFy_Logo.png" id="logo" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
-                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+                aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
@@ -40,6 +37,7 @@
                         <a class="nav-link" href="indexblog.html" id="pg"> Página Inicial <span class="sr-only">(página
                                 atual)</span></a>
                     </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -48,9 +46,6 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="grupo.html"> Equipe </a>
                             <a class="dropdown-item" href="#">Projeto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -62,20 +57,23 @@
                             <a class="dropdown-item" href="cursos.html"> Cursos </a>
                             <a class="dropdown-item" href="consulta.html">Consultorias</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#"> <input class="form-control mr-sm-2" type="search"
-                                    placeholder="Pesquisar" aria-label="Pesquisar"> </a>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Contato </a>
                     </li>
+
                 </ul>
+                <a href="login.html" class="nav-link">
+                    <i class="fa-solid fa-user fa-bounce fa-2xl"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-gear fa-bounce fa-2xl"></i>
+                </a>
             </div>
         </nav>
     </header>
-    <div class="jumbotron">
+<div class="jumbotron">
         <h1 class="display-4">
             Consultorias
         </h1>
