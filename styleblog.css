@@ -56,14 +56,6 @@ article {
     margin: 0px 10px;
 }
 
-aside {
-    grid-area: aside;
-    background: rgb(0, 74, 173);
-    background: linear-gradient(275deg, rgba(0, 74, 173, 0.8) 20%,
-            rgba(93, 224, 230, 0.8) 80%);
-    font-family: "Arvo", sans-serif;
-}
-
 footer {
     grid-area: footer;
     background: rgb(93, 224, 230);
