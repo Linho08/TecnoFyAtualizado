@@ -26,19 +26,16 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="#"><img src="Images/TecnoFy_Logo.png" id="logo" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
-                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+                aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="indexblog.html" id="pg">
-                            Página Inicial
-                            <span class="sr-only">
-                                (página atual)
-                            </span>
-                        </a>
+                        <a class="nav-link" href="indexblog.html" id="pg"> Página Inicial <span class="sr-only">(página
+                                atual)</span></a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -58,7 +55,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="cursos.html"> Cursos </a>
-                            <a class="dropdown-item" href="#">Consultorias</a>
+                            <a class="dropdown-item" href="consulta.html">Consultorias</a>
                     </li>
 
                     <li class="nav-item">
@@ -76,6 +73,7 @@
             </div>
         </nav>
     </header>
+
     <div class="jumbotron">
         <h1 class="display-4">
             Cursos
@@ -96,27 +94,26 @@
                 <h6 class="card-subtitle">Duração | 6 horas</h6><br>
                 <p class="card-text">
                     Neste curso, você aprenderá sobre os conceitos básicos e fundamentais de Redes Sociais e sobre o
-                    Pacote Office, da Microsoft.
+                    Pacote Office, ferramenta de grande versatilidade, da Microsoft.
                 </p>
                 <a href="https://www.ev.org.br/cursos/cultura-digital" class="card-link"><button type="button"
                         class="btn btn-outline-info">Matricule-se já!</button></a><br>
+                <br>
                 <div class="rating">
-                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
-                    <label for='rating_5'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
-                    <label for='rating_4'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
-                    <label for='rating_3'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
-                    <label for='rating_2'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
-                    <label for='rating_1'></label>
+                    <h6 class="card-subtitle">Avalie este curso</h6>
+                    <input value="5" name="rating" id="star5" type="radio">
+                    <label for="star5"></label>
+                    <input value="4" name="rating" id="star4" type="radio">
+                    <label for="star4"></label>
+                    <input value="3" name="rating" id="star3" type="radio">
+                    <label for="star3"></label>
+                    <input value="2" name="rating" id="star2" type="radio">
+                    <label for="star2"></label>
+                    <input value="1" name="rating" id="star1" type="radio">
+                    <label for="star1"></label>
                 </div>
             </div>
+
         </div>
         <div class="card" style="width: 18rem;">
             <div class="card-body">
@@ -127,22 +124,20 @@
                     particularidades, como a utilização do SQL Server.
                 </p>
                 <a href="https://www.ev.org.br/cursos/implementando-banco-de-dados" class="card-link"><button
-                        type="button" class="btn btn-outline-info">Matricule-se já!</button></a>
+                        type="button" class="btn btn-outline-info">Matricule-se já!</button></a><br>
+                <br>
                 <div class="rating">
-                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
-                    <label for='rating_5'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
-                    <label for='rating_4'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
-                    <label for='rating_3'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
-                    <label for='rating_2'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
-                    <label for='rating_1'></label>
+                    <h6 class="card-subtitle">Avalie este curso</h6>
+                    <input value="5" name="rating" id="star5" type="radio">
+                    <label for="star5"></label>
+                    <input value="4" name="rating" id="star4" type="radio">
+                    <label for="star4"></label>
+                    <input value="3" name="rating" id="star3" type="radio">
+                    <label for="star3"></label>
+                    <input value="2" name="rating" id="star2" type="radio">
+                    <label for="star2"></label>
+                    <input value="1" name="rating" id="star1" type="radio">
+                    <label for="star1"></label>
                 </div>
             </div>
         </div>
@@ -151,27 +146,25 @@
                 <h5 class="card-title">Introdução a Redes de Computadores</h5>
                 <h6 class="card-subtitle">Duração | 15 horas</h6><br>
                 <p class="card-text">
-                    Nos três capítulos deste curso, você aprenderá conceitos importantes sobre como as redes funcionam.
-                    Para isso, abordamos temas, como tipos de redes, meios e formas de transmissão de dados, cabeamento
+                    Nos três capítulos deste curso abordaremos temas, como tipos de redes, meios e formas de transmissão
+                    de dados, cabeamento
                     estruturado, arquitetura de redes, protocolo TCP/IP, entre outros.
                 </p>
                 <a href="https://www.ev.org.br/cursos/introducao-a-redes-de-computadores" class="card-link"><button
-                        type="button" class="btn btn-outline-info">Matricule-se já!</button></a>
+                        type="button" class="btn btn-outline-info">Matricule-se já!</button></a><br>
+                <br>
                 <div class="rating">
-                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
-                    <label for='rating_5'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
-                    <label for='rating_4'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
-                    <label for='rating_3'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
-                    <label for='rating_2'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
-                    <label for='rating_1'></label>
+                    <h6 class="card-subtitle">Avalie este curso</h6>
+                    <input value="5" name="rating" id="star5" type="radio">
+                    <label for="star5"></label>
+                    <input value="4" name="rating" id="star4" type="radio">
+                    <label for="star4"></label>
+                    <input value="3" name="rating" id="star3" type="radio">
+                    <label for="star3"></label>
+                    <input value="2" name="rating" id="star2" type="radio">
+                    <label for="star2"></label>
+                    <input value="1" name="rating" id="star1" type="radio">
+                    <label for="star1"></label>
                 </div>
             </div>
         </div>
@@ -182,26 +175,26 @@
                 <h5 class="card-title">Fundamentos de Aplicações Móveis</h5>
                 <h6 class="card-subtitle">Duração | 15 horas</h6><br>
                 <p class="card-text">
-                    Neste curso introdutório, você será apresentado aos conhecimentos fundamentais das aplicações
+                    Os desenvolvedores de softwares precisam estar preparados para acompanhar os anseios dos usuários,
+                    criando aplicativos atraentes, úteis, relevantes e seguros. Neste curso introdutório,
+                    você será apresentado aos conhecimentos fundamentais das aplicações
                     móveis, que certamente serão úteis para se tornar um desenvolvedor de soluções mobile, no futuro.
                 </p>
                 <a href="https://www.ev.org.br/cursos/fundamentos-das-aplicacoes-moveis" class="card-link"><button
-                        type="button" class="btn btn-outline-info">Matricule-se já!</button></a>
+                        type="button" class="btn btn-outline-info">Matricule-se já!</button></a><br>
+                <br>
                 <div class="rating">
-                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
-                    <label for='rating_5'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
-                    <label for='rating_4'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
-                    <label for='rating_3'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
-                    <label for='rating_2'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
-                    <label for='rating_1'></label>
+                    <h6 class="card-subtitle">Avalie este curso</h6>
+                    <input value="5" name="rating" id="star5" type="radio">
+                    <label for="star5"></label>
+                    <input value="4" name="rating" id="star4" type="radio">
+                    <label for="star4"></label>
+                    <input value="3" name="rating" id="star3" type="radio">
+                    <label for="star3"></label>
+                    <input value="2" name="rating" id="star2" type="radio">
+                    <label for="star2"></label>
+                    <input value="1" name="rating" id="star1" type="radio">
+                    <label for="star1"></label>
                 </div>
             </div>
         </div>
@@ -216,22 +209,20 @@
                     para o desenvolvimento de algoritmos.
                 </p>
                 <a href="https://www.ev.org.br/cursos/fundamentos-de-logica-de-programacao" class="card-link"><button
-                        type="button" class="btn btn-outline-info">Matricule-se já!</button></a>
+                        type="button" class="btn btn-outline-info">Matricule-se já!</button></a><br>
+                <br>
                 <div class="rating">
-                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
-                    <label for='rating_5'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
-                    <label for='rating_4'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
-                    <label for='rating_3'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
-                    <label for='rating_2'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
-                    <label for='rating_1'></label>
+                    <h6 class="card-subtitle">Avalie este curso</h6>
+                    <input value="5" name="rating" id="star5" type="radio">
+                    <label for="star5"></label>
+                    <input value="4" name="rating" id="star4" type="radio">
+                    <label for="star4"></label>
+                    <input value="3" name="rating" id="star3" type="radio">
+                    <label for="star3"></label>
+                    <input value="2" name="rating" id="star2" type="radio">
+                    <label for="star2"></label>
+                    <input value="1" name="rating" id="star1" type="radio">
+                    <label for="star1"></label>
                 </div>
             </div>
         </div>
@@ -246,22 +237,20 @@
                     do cumprimento de leis nacionais e internacionais.
                 </p>
                 <a href="https://www.ev.org.br/cursos/etica-no-desenvolvimento-de-sistemas" class="card-link"><button
-                        type="button" class="btn btn-outline-info">Matricule-se já!</button></a>
+                        type="button" class="btn btn-outline-info">Matricule-se já!</button></a><br>
+                <br>
                 <div class="rating">
-                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
-                    <label for='rating_5'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
-                    <label for='rating_4'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
-                    <label for='rating_3'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
-                    <label for='rating_2'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
-                    <label for='rating_1'></label>
+                    <h6 class="card-subtitle">Avalie este curso</h6>
+                    <input value="5" name="rating" id="star5" type="radio">
+                    <label for="star5"></label>
+                    <input value="4" name="rating" id="star4" type="radio">
+                    <label for="star4"></label>
+                    <input value="3" name="rating" id="star3" type="radio">
+                    <label for="star3"></label>
+                    <input value="2" name="rating" id="star2" type="radio">
+                    <label for="star2"></label>
+                    <input value="1" name="rating" id="star1" type="radio">
+                    <label for="star1"></label>
                 </div>
             </div>
         </div>
@@ -272,28 +261,28 @@
                 <h5 class="card-title">Modelagem de Dados</h5>
                 <h6 class="card-subtitle">Duração | 8 horas</h6><br>
                 <p class="card-text">
-                    Este curso aborda, mais detalhadamente, como realizar a modelagem de dados e quais técnicas estão
+                    A informação - considerada um dos bens mais preciosos para as organizações - passou a ter um peso
+                    essencial, pois auxilia a tomada de decisões.Este curso aborda, mais detalhadamente,
+                    como realizar a modelagem de dados e quais técnicas estão
                     envolvidas, incluindo, ainda, uma introdução a respeito de banco de dados e alguns temas, como a
                     teoria relacional, a normalização, o autorrelacionamento, a cardinalidade, minimundo, abstração,
                     entre outros conceitos.
                 </p>
                 <a href="https://www.ev.org.br/cursos/modelagem-de-dados" class="card-link"><button type="button"
-                        class="btn btn-outline-info">Matricule-se já!</button></a>
+                        class="btn btn-outline-info">Matricule-se já!</button></a><br>
+                <br>
                 <div class="rating">
-                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
-                    <label for='rating_5'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
-                    <label for='rating_4'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
-                    <label for='rating_3'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
-                    <label for='rating_2'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
-                    <label for='rating_1'></label>
+                    <h6 class="card-subtitle">Avalie este curso</h6>
+                    <input value="5" name="rating" id="star5" type="radio">
+                    <label for="star5"></label>
+                    <input value="4" name="rating" id="star4" type="radio">
+                    <label for="star4"></label>
+                    <input value="3" name="rating" id="star3" type="radio">
+                    <label for="star3"></label>
+                    <input value="2" name="rating" id="star2" type="radio">
+                    <label for="star2"></label>
+                    <input value="1" name="rating" id="star1" type="radio">
+                    <label for="star1"></label>
                 </div>
             </div>
         </div>
@@ -308,22 +297,21 @@
                     que será apresentado e utilizado na prática, para melhor compreensão.
                 </p>
                 <a href="https://www.ev.org.br/cursos/desenvolvendo-aplicacoes-mobile-com-android-studio"
-                    class="card-link"><button type="button" class="btn btn-outline-info">Matricule-se já!</button></a>
+                    class="card-link"><button type="button" class="btn btn-outline-info">Matricule-se
+                        já!</button></a><br>
+                <br>
                 <div class="rating">
-                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
-                    <label for='rating_5'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
-                    <label for='rating_4'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
-                    <label for='rating_3'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
-                    <label for='rating_2'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
-                    <label for='rating_1'></label>
+                    <h6 class="card-subtitle">Avalie este curso</h6>
+                    <input value="5" name="rating" id="star5" type="radio">
+                    <label for="star5"></label>
+                    <input value="4" name="rating" id="star4" type="radio">
+                    <label for="star4"></label>
+                    <input value="3" name="rating" id="star3" type="radio">
+                    <label for="star3"></label>
+                    <input value="2" name="rating" id="star2" type="radio">
+                    <label for="star2"></label>
+                    <input value="1" name="rating" id="star1" type="radio">
+                    <label for="star1"></label>
                 </div>
             </div>
         </div>
@@ -339,27 +327,149 @@
                     visualizar como aplicar as metodologias apresentadas na prática.
                 </p>
                 <a href="https://www.ev.org.br/cursos/projetos-de-sistemas-de-ti" class="card-link"><button
-                        type="button" class="btn btn-outline-info">Matricule-se já!</button></a>
+                        type="button" class="btn btn-outline-info">Matricule-se já!</button></a><br>
+                <br>
                 <div class="rating">
-                    <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>
-                    <label for='rating_5'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
-                    <label for='rating_4'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
-                    <label for='rating_3'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
-                    <label for='rating_2'></label>
-
-                    <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
-                    <label for='rating_1'></label>
+                    <h6 class="card-subtitle">Avalie este curso</h6>
+                    <input value="5" name="rating" id="star5" type="radio">
+                    <label for="star5"></label>
+                    <input value="4" name="rating" id="star4" type="radio">
+                    <label for="star4"></label>
+                    <input value="3" name="rating" id="star3" type="radio">
+                    <label for="star3"></label>
+                    <input value="2" name="rating" id="star2" type="radio">
+                    <label for="star2"></label>
+                    <input value="1" name="rating" id="star1" type="radio">
+                    <label for="star1"></label>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-white text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block" id="redes">
+                    <span>Conecte-se conosco nas redes sociais:</span>
+                </div>
+                <!-- Left -->
 
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 link-secondary" id="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4" id="footer_company">
+                                <img src="Images/TecnoFy Logo.png" alt="" id="logo">
+                                TecnoFy
+                            </h6>
+                            <p>
+                                you can rows columns to organize your footer content. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Angular</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">React</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Vue</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Laravel</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Pricing</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Settings</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Orders</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+                            <p>
+                                <i class="fas fa-envelope me-3 text-secondary"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+                © 2021 Copyright:
+                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </footer>
 
 
 
