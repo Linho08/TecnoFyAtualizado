@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    line-height: 1.6em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(93, 224, 230);
+    background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
+    overflow-x: hidden;
+    font-size: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "footer footer footer"
+        "footer footer footer";
+    grid-template-rows: auto auto auto;
+}
+
+header {
+    grid-area: header;
+    margin: 0px 0px 10px 0px;
+    background: rgb(93, 224, 230);
+    background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
+    padding: 0.5rem 7rem;
+}
+
+#icon-user {
+    color: black;
+}
+
+#icon-user:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+#logo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+footer {
+    grid-area: footer;
+    background: rgb(93, 224, 230);
+    background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
+}
+
+.navbar-toggler-icon {
+    border: 2px solid #004AAD;
+}
+
+#pg {
+    font-family: "Arvo", sans-serif;
+}
+
+#navbarDropdown {
+    font-family: "Arvo", sans-serif;
+}
+
+.dropdown-item {
+    font-family: "Arvo", sans-serif;
+}
+
+::placeholder {
+    font-family: "Arvo", sans-serif;
+}
+
+.jumbotron {
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: rgb(93, 224, 230);
+    background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
+}
+
+.btn:hover {
+    background-color: #004AAD;
+    border: 2px solid #004AAD;
+    color: #5DE0E6;
+}
+
+.btn-outline-success {
+    color: #004AAD;
+    background-color: transparent;
+    background-image: none;
+    border-color: #004AAD;
+}
+
+#redes {
+    color: white;
+    font-family: 'Merriweather', sans-serif;
+}
+
+#footer_company {
+    color: white;
+    font-family: 'Arvo', sans-serif;
+}
+
+#titulo {
+    color: white;
+    font-family: 'Arvo', sans-serif;
+    text-decoration: underline;
+}
+
+.text-reset {
+    font-family: 'Merriweather', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.text-reset:hover {
+    text-decoration: none;
+    color: rgb(209, 209, 209);
+}
+
+#text {
+    color: white;
+    font-family: 'Arvo', sans-serif;
+}
+
+#text-config {
+    font-family: 'Merriweather', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+#text-config:hover {
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+}
