@@ -97,6 +97,11 @@ footer {
 .card-subtitle {
   color: #5DE0E6;
 }
+.rating{
+  position: left;
+  display: flex;
+  flex-direction: row-reverse;
+}
 .rating input{
   position: relative;
   width: 40px;
@@ -116,6 +121,10 @@ footer {
   color: white;
   transition: 0.5s;
 }
+.rating input:hover ~ input::before,
+.rating input:hover::before,
+.rating input:checked ~ input::before,
+.rating input:checked::before,
 
 .rating input:hover ~ input::before{
   color: var(--c);
