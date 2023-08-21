@@ -93,14 +93,17 @@ footer {
 .card-link {
   color: #5DE0E6;
 }
-
+.card-rate{
+  color: #5DE0E6;
+}
 .card-subtitle {
   color: #5DE0E6;
 }
 .rating{
-  position: left;
+  position: relative;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: left;
 }
 .rating input{
   position: relative;
