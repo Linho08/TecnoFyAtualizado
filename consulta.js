@@ -1,10 +1,6 @@
-const modal = document.querySelector('.modal-container')
-
-function openModal() {
-    modal.classList.add('active')
+function toogle() {
+    var blur = document.getElementById('blur');
+    blur.classList.toogle('active')
+    var popup = document.getElementById('popup');
+    popup.classList.toogle('active')
 }
-
-function closeModal() {
-    modal.classList.remove('active')
-}
-

@@ -86,117 +86,34 @@ footer {
     background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
 }
 
-.form {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    background-image: linear-gradient(45deg, #330808, 
-    #3a2c09);
-    border-radius: 2.5em;
-    padding: 30px;
-    width: 300px;
-    height: 350px;
-  }
-  
-  .form::before {
-    content: '';
-    background-image: linear-gradient(45deg, #ff0000, 
-    #ffb700);
-    height: 358px;
-    width: 309px;
+.jumbotron#blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+} 
+
+#popup {
     position: absolute;
-    margin-top: -34px;
-    margin-left: px;
-    z-index: -1;
-    border-radius: 2.7em;
-  }
-  
-  .button {
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    background: #ff5900;
-    color: black;
-    padding: 0.7em 5.5em;
-    display: flex;
-    align-items: center;
-    border: 2px solid #66da4300;
-    border-radius: 5em;
-    overflow: hidden;
-    transition: all 0.2s;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    border: 2px solid #ff5900;
-    background: #00000000;
-    color: #ff5900;
-  }
-  
-  .button:active {
-    border: 2px solid #66da4300;
-    background: #ff5900;
-    color: black;
-  }
-  
-  .input {
-    width: calc(100% - 10px);
-    padding: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #66da4300;
-    border-bottom: 1px solid #ff5900;
-    outline: none;
-    background-color: transparent;
-    color: #ff5900;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: 0.2s;
-  }
-  
-  .input:focus {
-    border: 1px solid #66da4300;
-    border-bottom: 1px solid #ff5900;
-    background-color: transparent;
-    color: white;
-  }
-  
-  .input::placeholder {
-    color: #9b725b;
-  }
-  
-  .textarea {
-    font-family: Arial, Helvetica, sans-serif;
-    width: calc(100% - 10px);
-    padding: 8px;
-    height: 100px;
-    margin-bottom: 20px;
-    border: 1px solid #66da4300;
-    border-bottom: 1px solid #ff5900;
-    outline: none;
-    background-color: transparent;
-    color: #ff5900;
-  }
-  
-  .textarea::placeholder {
-    color: #9b725b;
-  }
-  
-  .textarea:focus {
-    border: 1px solid #66da4300;
-    border-bottom: 1px solid #ff5900;
-    background-color: transparent;
-    color: white;
-  }
-
-.active {
-    display: flex;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
 }
 
-.active .modal {
-    animation: modal .4s;
+#popup.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
 }
 
-.card{
+.card {
     margin: 30px;
     margin: 30px;
     border-radius: 30%;
