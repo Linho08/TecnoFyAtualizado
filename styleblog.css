@@ -56,32 +56,22 @@ article {
     margin: 0px 10px;
 }
 
+#card-info {
+    color: white;
+    border: 1px solid #646464;
+    background: #004AAD;
+}
 
+#card-curso{
+    color: white;       
+    border: 1px solid #646464;
+    background: #004AAD;
+}
 
 footer {
     grid-area: footer;
     background: rgb(93, 224, 230);
     background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
-}
-
-.navbar-toggler-icon {
-    border: 2px solid #004AAD;
-}
-
-#pg {
-    font-family: "Arvo", sans-serif;
-}
-
-#navbarDropdown {
-    font-family: "Arvo", sans-serif;
-}
-
-.dropdown-item {
-    font-family: "Arvo", sans-serif;
-}
-
-::placeholder {
-    font-family: "Arvo", sans-serif;
 }
 
 .jumbotron {
@@ -114,4 +104,88 @@ footer {
 #footer_company {
     color: white;
     font-family: 'Arvo', sans-serif;
+}
+
+#titulo {
+    color: white;
+    font-family: 'Arvo', sans-serif;
+    text-decoration: underline;
+}
+
+.text-reset {
+    font-family: 'Merriweather', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.text-reset:hover {
+    text-decoration: none;
+    color: rgb(209, 209, 209);
+}
+
+#text {
+    color: white;
+    font-family: 'Arvo', sans-serif;
+}
+
+#text-config {
+    font-family: 'Merriweather', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+#text-config:hover {
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+}
+
+#icon {
+    color: rgb(112, 112, 112);
+}
+
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+
+/* button styling */
+.button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255, 255, 255, 0.6);
+    --animation-color: #5DE0E6;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+/* this is the text, when you hover on button */
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* hover */
+.button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
 }
