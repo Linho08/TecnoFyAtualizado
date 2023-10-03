@@ -86,32 +86,54 @@ footer {
     background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
 }
 
-.jumbotron#blur.active {
-    filter: blur(20px);
-    pointer-events: none;
-    user-select: none;
-} 
+.button {
+    background-color: white;
+    padding: 10px 15px;
+    color: #004AAD;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+    margin-top: 25px;
+    text-decoration: none;
+    transition: 0.4s;
+}
 
-#popup {
+.button:hover {
+   background: #5DE0E6;
+   color: white; 
+}
+
+.popup {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    padding: 50px;
-    box-shadow: 0 5px 30px rgba(0,0,0,.30);
-    background: #fff;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#popup.active {
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
+.popup-content {
+    height: 250px;
+    width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
 }
+
+input {
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+
 
 .card {
     margin: 30px;

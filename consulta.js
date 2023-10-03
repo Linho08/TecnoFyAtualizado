@@ -1,6 +1,7 @@
-function toogle() {
-    var blur = document.getElementById('blur');
-    blur.classList.toogle('active')
-    var popup = document.getElementById('popup');
-    popup.classList.toogle('active')
-}
+document.getElementById("button").addEventListener("click", function() {
+    document.querySelector(".popup").style.display = "flex";
+})
+document.getElementsByClassName(".close").addEventListener("click", function() {
+    document.querySelector(".popup").style.display = "none";
+})
+
