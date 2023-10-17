@@ -86,54 +86,40 @@ footer {
     background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
 }
 
-.button {
-    background-color: white;
-    padding: 10px 15px;
-    color: #004AAD;
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-size: 18px;
-    border-radius: 5px;
-    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
-    margin-top: 25px;
-    text-decoration: none;
-    transition: 0.4s;
-}
-
-.button:hover {
-   background: #5DE0E6;
-   color: white; 
-}
-
-.popup {
-    background: rgba(0, 0, 0, 0.6);
+/*Rating*/
+.slider {
+    -webkit-appearance: none;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.popup-content {
-    height: 250px;
-    width: 500px;
-    background: white;
-    padding: 20px;
+    height: 10px;
     border-radius: 5px;
-    position: relative;
-}
-
-input {
-    margin: 20px auto;
-    display: block;
-    width: 50%;
-    padding: 8px;
-    border: 1px solid gray;
-}
-
-
+    background-color: #0004ff;
+    background-image: linear-gradient(43deg, #33ff00 0%, #fbff00 46%, #ff0000 100%);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+    background-image: linear-gradient(160deg, #000000 0%, #000000 100%);
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+    background-image: linear-gradient(160deg, #000000 0%, #000000 100%);
+    cursor: pointer;
+  }
+  
 
 .card {
     margin: 30px;
