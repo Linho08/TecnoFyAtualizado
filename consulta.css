@@ -13,6 +13,27 @@ html {
 body {
     overflow-x: hidden;
     font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    --s: 82px;
+    --c1: #b2b2b2;
+    --c2: #ffffff;
+    --c3: #d9d9d9;
+
+    --_g: var(--c3) 0 120deg, #0000 0;
+    background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)),
+        conic-gradient(from 120deg at 50% calc(200% / 3), var(--_g)),
+        conic-gradient(from 60deg at calc(200% / 3),
+            var(--c3) 60deg,
+            var(--c2) 0 120deg,
+            #0000 0),
+        conic-gradient(from 180deg at calc(100% / 3), var(--c1) 60deg, var(--_g)),
+        linear-gradient(90deg,
+            var(--c1) calc(100% / 6),
+            var(--c2) 0 50%,
+            var(--c1) 0 calc(500% / 6),
+            var(--c2) 0);
+    background-size: calc(1.732 * var(--s)) var(--s);
 }
 
 main {
@@ -98,9 +119,9 @@ footer {
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
-  }
-  
-  .slider::-webkit-slider-thumb {
+}
+
+.slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 20px;
@@ -109,34 +130,50 @@ footer {
     background-color: #000000;
     background-image: linear-gradient(160deg, #000000 0%, #000000 100%);
     cursor: pointer;
-  }
-  
-  .slider::-moz-range-thumb {
+}
+
+.slider::-moz-range-thumb {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background-color: #000000;
     background-image: linear-gradient(160deg, #000000 0%, #000000 100%);
     cursor: pointer;
-  }
-  
+}
+
 
 .card {
     margin: 30px;
     margin: 30px;
     border-radius: 30%;
 }
-.card-header{
+
+.card-header {
     color: white;
     background: rgb(93, 224, 230);
     background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
 }
-.card-body{
+
+.card-body {
     background: #004AAD;
 }
-.card-title{
+
+.card-title {
     color: #5DE0E6;
 }
-.card-text{
+
+.card-text {
     color: white;
+}
+
+#form-teste {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(180deg, #004AAD 20%, #5DE0E6 80%);    color: white;
+    margin: 30px 30px;
+}
+
+#form-titulo {
+
 }
