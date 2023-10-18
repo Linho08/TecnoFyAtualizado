@@ -21,379 +21,449 @@
     <title>T E C N O F Y</title>
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#"><img src="Images/TecnoFy_Logo.png" id="logo" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
-                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="indexblog.html" id="pg">Página Inicial</a>
-                    </li>
+<body onLoad='carregou()'>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Sobre
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="equipe.html"> Equipe </a>
-                            <a class="dropdown-item" href="#">Projeto</a>
-                    </li>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#"> <img src="Images/TecnoFy_Logo.png" id="logo" alt="" onMouseOver='focou()'> </a>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="cursos.html"> Cursos </a>
-                    </li>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+                    aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"> </span>
+                </button>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="contato.html"> Contato </a>
-                    </li>
+                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="indexblog.html" id="pg">Página Inicial</a>
+                        </li>
 
-                </ul>
-                <a href="login.html" class="nav-link">
-                    <i class="fa-solid fa-user fa-2xl"></i>
-                </a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sobre
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="equipe.html"> Equipe </a>
+                                <a class="dropdown-item" href="#">Projeto</a>
+                        </li>
 
-                <a href="#">
-                    <i class="fa-solid fa-gear fa-2xl"></i>
-                </a>
-            </div>
-        </nav>
-    </header>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cursos.html"> Cursos </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html"> Contato </a>
+                        </li>
+
+                    </ul>
+                    
+                    <a href="login.html" class="nav-link">
+                        <i class="fa-solid fa-user fa-2xl"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-gear fa-2xl"></i>
+                    </a>
+                </div>
+            </nav>
+        </header>
 
 
-    <div class="jumbotron">
-        <h1 class="display-4">
-            Consultorias
-        </h1>
-        <h2 class="display-5">
-            Navegue por nossas opções
-        </h2>
-        <p class="lead">
-            Busque aquilo que seu site precisa para se tornar ainda mais profissional com a ajuda de nossos
-            colaboradores <br>
-        </p>
-        <a href="#form" class="button" id="button">Agende uma Consulta</a>
-    </div>
-    <div class="consult-card">
-        <div class="card" id="danielle">
-            <h5 class="card-header">Consultoria de Design</h5>
-            <div class="card-body">
-                <h5 class="card-title">Responsável | Danielle Dias</h5>
-                <p class="card-text">Nossa consultoria de design oferece soluções criativas e inovadoras para tornar sua
-                    marca e seus produtos visualmente atraentes. Combinando expertise técnica com uma abordagem
-                    estratégica, ajudamos você a criar uma identidade visual única que se destaca da concorrência.
-                    Nossos serviços abrangem desde o desenvolvimento de logotipos e materiais de marketing até a criação
-                    de interfaces de usuário intuitivas e atraentes. Nossa equipe de designers altamente qualificados
-                    irá trabalhar em estreita colaboração com você, garantindo que suas necessidades e objetivos sejam
-                    atendidos em cada etapa do processo. Acreditamos que o bom design é fundamental para o sucesso de
-                    qualquer negócio e estamos aqui para ajudar você a alcançar o visual perfeito para sua marca. Entre
-                    em contato conosco hoje mesmo e deixe nosso talento em design levar sua marca para o próximo nível.
-                </p>
-            </div>
-        </div>
-
-        <div class="card">
-            <h5 class="card-header">Consultoria de Sistemas</h5>
-            <div class="card-body">
-                <h5 class="card-title">Responsável | Paulo Souza</h5>
-                <p class="card-text">Nossa consultoria de desenvolvimento de sistemas é a solução perfeita para
-                    impulsionar o crescimento e eficiência do seu negócio. Com uma equipe de especialistas altamente
-                    qualificados, estamos prontos para entender suas necessidades específicas e criar soluções
-                    personalizadas que atendam a todos os seus requisitos. Desde o planejamento e análise de requisitos
-                    até o design e implementação, trabalharemos de perto com você para garantir que seu sistema seja
-                    desenvolvido de forma eficiente, segura e escalável. Com anos de experiência e conhecimento em
-                    diversas tecnologias, podemos ajudar a transformar suas ideias em realidade e otimizar processos,
-                    melhorar a produtividade e maximizar o retorno do seu investimento. Não importa o tamanho do seu
-                    projeto, estaremos ao seu lado em cada etapa do caminho, fornecendo suporte completo e soluções
-                    confiáveis. Contate-nos hoje mesmo e vamos começar a construir um sistema sob medida para o seu
-                    negócio de sucesso.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <h5 class="card-header">Consultoria de Suporte</h5>
-            <div class="card-body">
-                <h5 class="card-title">Responsável | Pedro Henrique</h5>
-                <p class="card-text">Se você está buscando uma solução eficiente e confiável para seus problemas de
-                    programação, nossa consultoria de suporte é a escolha ideal. Nossa equipe de especialistas altamente
-                    qualificados e experientes está pronta para ajudar, independentemente do seu nível de habilidade.
-                    Desde solucionar erros de código até fornecer orientação personalizada para projetos complexos,
-                    estamos aqui para oferecer suporte técnico de qualidade. Nossa abordagem é simples e direta, focada
-                    em entender as necessidades específicas de cada cliente e fornecer soluções claras e eficazes.
-                    Trabalhar conosco significa ter acesso a um suporte ágil e confiável, garantindo que você possa
-                    seguir em frente em seus projetos com confiança e tranquilidade. Conte conosco para superar desafios
-                    e alcançar excelência em sua jornada de programação.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <h5 class="card-header">Consultoria de Requisitos</h5>
-            <div class="card-body">
-                <h5 class="card-title">Responsável | Jonathan Oliveira</h5>
-                <p class="card-text">Nossa consultoria de análise de requisitos é a solução ideal para empresas que
-                    desejam garantir o sucesso de seus projetos de desenvolvimento de software. Nossa equipe de
-                    especialistas altamente qualificados irá orientá-lo em todas as etapas do processo de análise, desde
-                    a identificação e compreensão das necessidades do negócio até a definição clara e precisa dos
-                    requisitos do sistema. Com uma abordagem estruturada e metodologias comprovadas, ajudamos a eliminar
-                    ambiguidades, identificar potenciais problemas e garantir que todos os requisitos sejam capturados
-                    de forma completa e precisa. Investir em nossa consultoria de análise de requisitos é o primeiro
-                    passo para um projeto bem-sucedido e alinhado com as expectativas de sua empresa.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <h5 class="card-header">Consultoria de Finanças</h5>
-            <div class="card-body">
-                <h5 class="card-title">Responsável | Filipe Rebouças</h5>
-                <p class="card-text">Oferecemos uma consultoria de finanças personalizada, projetada para ajudar você a
-                    alcançar seus objetivos financeiros de maneira eficiente e inteligente. Nossos consultores
-                    especializados irão trabalhar em estreita colaboração com você, analisando suas finanças atuais,
-                    identificando áreas de melhoria e desenvolvendo estratégias sob medida para maximizar seus ganhos e
-                    minimizar seus gastos. Com um foco em educar e capacitar nossos clientes, fornecemos soluções
-                    práticas e eficazes para ajudá-los a tomar decisões informadas, seja para investimentos,
-                    planejamento de aposentadoria ou gestão de dívidas. Não importa qual seja sua situação financeira
-                    atual, nossa consultoria de finanças irá fornecer orientação objetiva e soluções personalizadas para
-                    ajudá-lo a alcançar estabilidade e sucesso financeiro a longo prazo. Não perca mais tempo se
-                    preocupando com suas finanças. Entre em contato conosco hoje mesmo para uma consulta inicial
-                    gratuita e veja como podemos transformar sua relação com o dinheiro.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <h5 class="card-header">Consultoria de Documentação</h5>
-            <div class="card-body">
-                <h5 class="card-title">Responsável | Ian Felipe</h5>
-                <p class="card-text">A documentação de sistemas é uma peça fundamental para o sucesso de qualquer
-                    projeto de desenvolvimento de software. Ela proporciona clareza, organização e facilita a manutenção
-                    futura do sistema, garantindo um alto nível de qualidade e produtividade. Nossa consultoria de
-                    documentação de sistemas oferece suporte especializado na criação e atualização de manuais,
-                    diagramas, fluxogramas e todo tipo de documentação técnica. Com a nossa ajuda, você terá um sistema
-                    bem documentado, tornando mais fácil o entendimento, a colaboração e a escalabilidade do seu
-                    projeto. Não perca tempo com documentos confusos, invista na qualidade da sua documentação e otimize
-                    os resultados do seu negócio.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="form-teste">
-        <div class="form_title" id="form-titulo">
-            <h2>
-                Formulário de Agendamento
+        <div class="jumbotron">
+            <h1 class="display-4">
+                Consultorias
+            </h1>
+            <h2 class="display-5">
+                Navegue por nossas opções
             </h2>
+            <p class="lead">
+                Busque aquilo que seu site precisa para se tornar ainda mais profissional com a ajuda de nossos
+                colaboradores <br>
+            </p>
+            <a href="#form" class="button" id="button">Agende uma Consulta</a>
         </div>
-        <form>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Endereço de email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-            </div>
-            <div class="pessoa">
-                <div class="form-check">
-                    <h2>Para quem será feita a consulta?</h2>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1"
-                        checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                        Pessoa Física
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                        value="opcao2">
-                    <label class="form-check-label" for="exampleRadios2">
-                        Pessoa Jurídica
-                    </label>
-                </div>
-            </div>
-            <div class="especialista">
-                <div class="form-check">
-                    <h2>Qual tipo de consultoria você deseja?</h2>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1"
-                        checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                        Design
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                        value="opcao2">
-                    <label class="form-check-label" for="exampleRadios2">
-                        Sistemas
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                        value="opcao2">
-                    <label class="form-check-label" for="exampleRadios2">
-                        Suporte
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                        value="opcao2">
-                    <label class="form-check-label" for="exampleRadios2">
-                        Requisitos
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                        value="opcao2">
-                    <label class="form-check-label" for="exampleRadios2">
-                        Finanças
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                        value="opcao2">
-                    <label class="form-check-label" for="exampleRadios2">
-                        Documentação
-                    </label>
+
+        <div class="consult-card">
+            <div class="card" id="danielle">
+                <h5 class="card-header">Consultoria de Design</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Responsável | Danielle Dias</h5>
+                    <p class="card-text">Nossa consultoria de design oferece soluções criativas e inovadoras para tornar
+                        sua
+                        marca e seus produtos visualmente atraentes. Combinando expertise técnica com uma abordagem
+                        estratégica, ajudamos você a criar uma identidade visual única que se destaca da concorrência.
+                        Nossos serviços abrangem desde o desenvolvimento de logotipos e materiais de marketing até a
+                        criação
+                        de interfaces de usuário intuitivas e atraentes. Nossa equipe de designers altamente
+                        qualificados
+                        irá trabalhar em estreita colaboração com você, garantindo que suas necessidades e objetivos
+                        sejam
+                        atendidos em cada etapa do processo. Acreditamos que o bom design é fundamental para o sucesso
+                        de
+                        qualquer negócio e estamos aqui para ajudar você a alcançar o visual perfeito para sua marca.
+                        Entre
+                        em contato conosco hoje mesmo e deixe nosso talento em design levar sua marca para o próximo
+                        nível.
+                    </p>
                 </div>
             </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Descreva qual dificuldade/problema tem enfrentado</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                    placeholder="Seja o mais direto possível na descrição"></textarea>
-            </div>
-            <div class="rate">
-                <h2> Avalie a gravidade do problema</h2>
-                <input id="myRange" class="slider" value="50" max="100" min="0" type="range">
-            </div>
-        </form>
-    </div>
 
-    <footer>
-        <!-- Footer -->
-        <footer class="text-center text-lg-start bg-white text-muted">
-            <!-- Section: Social media -->
-            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-                <!-- Left -->
-                <div class="me-5 d-none d-lg-block" id="redes">
-                    <span>Conecte-se conosco nas redes sociais:</span>
+            <div class="card">
+                <h5 class="card-header">Consultoria de Sistemas</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Responsável | Paulo Souza</h5>
+                    <p class="card-text">Nossa consultoria de desenvolvimento de sistemas é a solução perfeita para
+                        impulsionar o crescimento e eficiência do seu negócio. Com uma equipe de especialistas altamente
+                        qualificados, estamos prontos para entender suas necessidades específicas e criar soluções
+                        personalizadas que atendam a todos os seus requisitos. Desde o planejamento e análise de
+                        requisitos
+                        até o design e implementação, trabalharemos de perto com você para garantir que seu sistema seja
+                        desenvolvido de forma eficiente, segura e escalável. Com anos de experiência e conhecimento em
+                        diversas tecnologias, podemos ajudar a transformar suas ideias em realidade e otimizar
+                        processos,
+                        melhorar a produtividade e maximizar o retorno do seu investimento. Não importa o tamanho do seu
+                        projeto, estaremos ao seu lado em cada etapa do caminho, fornecendo suporte completo e soluções
+                        confiáveis. Contate-nos hoje mesmo e vamos começar a construir um sistema sob medida para o seu
+                        negócio de sucesso.</p>
                 </div>
-                <!-- Left -->
+            </div>
 
-                <!-- Right -->
-                <div>
-                    <a href="" class="me-4 link-secondary" id="facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="" class="me-4 link-secondary">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="" class="me-4 link-secondary">
-                        <i class="fab fa-google"></i>
-                    </a>
-                    <a href="" class="me-4 link-secondary">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="" class="me-4 link-secondary">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="" class="me-4 link-secondary">
-                        <i class="fab fa-github"></i>
-                    </a>
+            <div class="card">
+                <h5 class="card-header">Consultoria de Suporte</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Responsável | Pedro Henrique</h5>
+                    <p class="card-text">Se você está buscando uma solução eficiente e confiável para seus problemas de
+                        programação, nossa consultoria de suporte é a escolha ideal. Nossa equipe de especialistas
+                        altamente
+                        qualificados e experientes está pronta para ajudar, independentemente do seu nível de
+                        habilidade.
+                        Desde solucionar erros de código até fornecer orientação personalizada para projetos complexos,
+                        estamos aqui para oferecer suporte técnico de qualidade. Nossa abordagem é simples e direta,
+                        focada
+                        em entender as necessidades específicas de cada cliente e fornecer soluções claras e eficazes.
+                        Trabalhar conosco significa ter acesso a um suporte ágil e confiável, garantindo que você possa
+                        seguir em frente em seus projetos com confiança e tranquilidade. Conte conosco para superar
+                        desafios
+                        e alcançar excelência em sua jornada de programação.</p>
                 </div>
-                <!-- Right -->
-            </section>
-            <!-- Section: Social media -->
+            </div>
 
-            <!-- Section: Links  -->
-            <section class="">
-                <div class="container text-center text-md-start mt-5">
-                    <!-- Grid row -->
-                    <div class="row mt-3">
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                            <!-- Content -->
-                            <h6 class="text-uppercase fw-bold mb-4" id="footer_company">
-                                <img src="Images/TecnoFy Logo.png" alt="" id="logo">
-                                TecnoFy
-                            </h6>
-                            <p>
-                                you can rows columns to organize your footer content. Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit.
-                            </p>
-                        </div>
-                        <!-- Grid column -->
+            <div class="card">
+                <h5 class="card-header">Consultoria de Requisitos</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Responsável | Jonathan Oliveira</h5>
+                    <p class="card-text">Nossa consultoria de análise de requisitos é a solução ideal para empresas que
+                        desejam garantir o sucesso de seus projetos de desenvolvimento de software. Nossa equipe de
+                        especialistas altamente qualificados irá orientá-lo em todas as etapas do processo de análise,
+                        desde
+                        a identificação e compreensão das necessidades do negócio até a definição clara e precisa dos
+                        requisitos do sistema. Com uma abordagem estruturada e metodologias comprovadas, ajudamos a
+                        eliminar
+                        ambiguidades, identificar potenciais problemas e garantir que todos os requisitos sejam
+                        capturados
+                        de forma completa e precisa. Investir em nossa consultoria de análise de requisitos é o primeiro
+                        passo para um projeto bem-sucedido e alinhado com as expectativas de sua empresa.</p>
+                </div>
+            </div>
 
-                        <!-- Grid column -->
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">
-                                Products
-                            </h6>
-                            <p>
-                                <a href="#!" class="text-reset">Angular</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">React</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Vue</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Laravel</a>
-                            </p>
-                        </div>
-                        <!-- Grid column -->
+            <div class="card">
+                <h5 class="card-header">Consultoria de Finanças</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Responsável | Filipe Rebouças</h5>
+                    <p class="card-text">Oferecemos uma consultoria de finanças personalizada, projetada para ajudar
+                        você a
+                        alcançar seus objetivos financeiros de maneira eficiente e inteligente. Nossos consultores
+                        especializados irão trabalhar em estreita colaboração com você, analisando suas finanças atuais,
+                        identificando áreas de melhoria e desenvolvendo estratégias sob medida para maximizar seus
+                        ganhos e
+                        minimizar seus gastos. Com um foco em educar e capacitar nossos clientes, fornecemos soluções
+                        práticas e eficazes para ajudá-los a tomar decisões informadas, seja para investimentos,
+                        planejamento de aposentadoria ou gestão de dívidas. Não importa qual seja sua situação
+                        financeira
+                        atual, nossa consultoria de finanças irá fornecer orientação objetiva e soluções personalizadas
+                        para
+                        ajudá-lo a alcançar estabilidade e sucesso financeiro a longo prazo. Não perca mais tempo se
+                        preocupando com suas finanças. Entre em contato conosco hoje mesmo para uma consulta inicial
+                        gratuita e veja como podemos transformar sua relação com o dinheiro.</p>
+                </div>
+            </div>
 
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">
-                                Useful links
-                            </h6>
-                            <p>
-                                <a href="#!" class="text-reset">Pricing</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Settings</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Orders</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Help</a>
-                            </p>
-                        </div>
-                        <!-- Grid column -->
+            <div class="card">
+                <h5 class="card-header">Consultoria de Documentação</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Responsável | Ian Felipe</h5>
+                    <p class="card-text">A documentação de sistemas é uma peça fundamental para o sucesso de qualquer
+                        projeto de desenvolvimento de software. Ela proporciona clareza, organização e facilita a
+                        manutenção
+                        futura do sistema, garantindo um alto nível de qualidade e produtividade. Nossa consultoria de
+                        documentação de sistemas oferece suporte especializado na criação e atualização de manuais,
+                        diagramas, fluxogramas e todo tipo de documentação técnica. Com a nossa ajuda, você terá um
+                        sistema
+                        bem documentado, tornando mais fácil o entendimento, a colaboração e a escalabilidade do seu
+                        projeto. Não perca tempo com documentos confusos, invista na qualidade da sua documentação e
+                        otimize
+                        os resultados do seu negócio.</p>
+                </div>
+            </div>
+        </div>
 
-                        <!-- Grid column -->
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                            <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
-                            <p>
-                                <i class="fas fa-envelope me-3 text-secondary"></i>
-                                info@example.com
-                            </p>
-                            <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
-                            <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
-                        </div>
-                        <!-- Grid column -->
+        <div class="form-teste">
+            <div class="form_title" id="form-titulo">
+                <h2>
+                    Formulário de Agendamento
+                </h2>
+            </div>
+
+            <form action="" id="form-teste-2">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Endereço de email</label>
+                    <input
+                    id='exampleFormControlInput1'
+                    type="email"
+                    class="form-control"
+                    placeholder="nome@exemplo.com"
+                    onFocus='focoNoEmail()'
+                    onFocusOut='semFocoNoEmail()'
+                    onKeyPress='avisarQueTeclou()'
+                />
+                </div>
+
+                <hr>
+
+                <div class="pessoa">
+                    <div class="form-check">
+                        <h2>Para quem será feita a consulta?</h2>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="opcao1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Pessoa Física
+                        </label>
                     </div>
-                    <!-- Grid row -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="opcao2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Pessoa Jurídica
+                        </label>
+                    </div>
                 </div>
-            </section>
-            <!-- Section: Links  -->
 
-            <!-- Copyright -->
-            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-                © 2021 Copyright:
-                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-            </div>
-            <!-- Copyright -->
+                <hr>
+
+                <div class="especialista">
+                    <div class="form-check">
+                        <h2>Qual tipo de consultoria você deseja?</h2>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="opcao1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Design
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="opcao2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Sistemas
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="opcao2">
+                        <label class="form-check-label" for="exampleRadios3">
+                            Suporte
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="opcao2">
+                        <label class="form-check-label" for="exampleRadios4">
+                            Requisitos
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="opcao2">
+                        <label class="form-check-label" for="exampleRadios5">
+                            Finanças
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="opcao2">
+                        <label class="form-check-label" for="exampleRadios6">
+                            Documentação
+                        </label>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">
+                        Descreva qual dificuldade/problema tem enfrentado
+                    </label>
+
+                    <textarea 
+                        class="form-control" 
+                        id="exampleFormControlTextarea1" 
+                        rows="3"
+                        placeholder="Seja o mais direto possível na descrição"
+                        onKeyPress='avisarQueTeclou()'
+                        type="text"
+                        onFocus='focoNaDescricao()'
+                        onFocusOut='semFocoNaDescricao()'    
+                        ></textarea>
+                </div>
+
+                <hr>
+
+                <div class="rate">
+                    <h2> Avalie a gravidade do problema</h2>
+                    <input id="myRange" class="slider" value="50" max="100" min="0" type="range">
+                </div>
+
+                <hr>
+
+                <button id='btn-form-submit' class='botao-form' type='submit'> Enviar </button>
+
+                <button id='btn-form-reset' class='botao-form' type='reset'> Limpar </button>
+
+            </form>
+        </div>
+
+
+        <footer>
+            <!-- Footer -->
+            <footer class="text-center text-lg-start bg-white text-muted">
+                <!-- Section: Social media -->
+                <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                    <!-- Left -->
+                    <div class="me-5 d-none d-lg-block" id="redes">
+                        <span>Conecte-se conosco nas redes sociais:</span>
+                    </div>
+                    <!-- Left -->
+
+                    <!-- Right -->
+                    <div>
+                        <a href="" class="me-4 link-secondary" id="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="" class="me-4 link-secondary">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="me-4 link-secondary">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="" class="me-4 link-secondary">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="" class="me-4 link-secondary">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="" class="me-4 link-secondary">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <!-- Right -->
+                </section>
+                <!-- Section: Social media -->
+
+                <!-- Section: Links  -->
+                <section class="">
+                    <div class="container text-center text-md-start mt-5">
+                        <!-- Grid row -->
+                        <div class="row mt-3">
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                <!-- Content -->
+                                <h6 class="text-uppercase fw-bold mb-4" id="footer_company">
+                                    <img src="Images/TecnoFy Logo.png" alt="" id="logo">
+                                    TecnoFy
+                                </h6>
+                                <p>
+                                    you can rows columns to organize your footer content. Lorem ipsum
+                                    dolor sit amet, consectetur adipisicing elit.
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Products
+                                </h6>
+                                <p>
+                                    <a href="#!" class="text-reset">Angular</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">React</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Vue</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Laravel</a>
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Useful links
+                                </h6>
+                                <p>
+                                    <a href="#!" class="text-reset">Pricing</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Settings</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Orders</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Help</a>
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                                <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+                                <p>
+                                    <i class="fas fa-envelope me-3 text-secondary"></i>
+                                    info@example.com
+                                </p>
+                                <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                                <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                    </div>
+                </section>
+                <!-- Section: Links  -->
+
+                <!-- Copyright -->
+                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+                    © 2021 Copyright:
+                    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
         </footer>
-        <!-- Footer -->
-    </footer>
-
-    </main>
-
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

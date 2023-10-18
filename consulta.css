@@ -36,17 +36,7 @@ body {
     background-size: calc(1.732 * var(--s)) var(--s);
 }
 
-main {
-    display: grid;
-    grid-template-areas:
-        "header header header"
-        "aside article article"
-        "footer footer footer";
-    grid-template-rows: auto auto auto;
-}
-
 header {
-    grid-area: header;
     margin: 0px 0px 10px 0px;
     background: rgb(93, 224, 230);
     background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
@@ -60,20 +50,10 @@ header {
 }
 
 article {
-    grid-area: article;
     margin: 0px 10px;
 }
 
-aside {
-    grid-area: aside;
-    background: rgb(0, 74, 173);
-    background: linear-gradient(275deg, rgba(0, 74, 173, 0.8) 20%,
-            rgba(93, 224, 230, 0.8) 80%);
-    font-family: "Arvo", sans-serif;
-}
-
 footer {
-    grid-area: footer;
     background: rgb(93, 224, 230);
     background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
 }
@@ -166,14 +146,26 @@ footer {
     color: white;
 }
 
-#form-teste {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: linear-gradient(180deg, #004AAD 20%, #5DE0E6 80%);    color: white;
+.form-teste {
+    display: grid; 
+    justify-items: center;
+    background: linear-gradient(180deg, #004AAD 20%, #5DE0E6 80%);
+    color: white;
     margin: 30px 30px;
+    padding: 15px 15px;
+}
+
+#form-teste-2 {
+    
 }
 
 #form-titulo {
 
+}
+
+.botao-form {
+    font-size: 1em;
+    justify-items: center;
+    text-align: center;
+    cursor: pointer;
 }
