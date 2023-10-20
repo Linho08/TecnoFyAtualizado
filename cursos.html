@@ -21,10 +21,11 @@
     <title>T E C N O F Y</title>
 </head>
 
-<body>
+<body onLoad='carregou()'>
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#"><img src="Images/TecnoFy_Logo.png" id="logo" alt="">
+            <a class="navbar-brand" href="#" onMouseOver='logo()'><img src="Images/TecnoFy_Logo.png" id="logo" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
                 aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
@@ -33,11 +34,11 @@
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="indexblog.html" id="pg"> Página Inicial</a>
+                        <a class="nav-link" href="index.html" id="pg"> Página Inicial</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" id="#popPro" onclick="popup()"> Projeto </a>
+                        <a class="nav-link"> Projeto </a>
                     </li>
 
                     <li class="nav-item">
@@ -63,6 +64,7 @@
             </div>
         </nav>
     </header>
+
 
     <div class="jumbotron">
         <h1 class="display-4">
@@ -92,7 +94,7 @@
                 <br>
                 <form>
                     <h6 class="card-rate">Avalie este curso:</h6>
-                    <div class="rating">
+                    <div class="rating"> 
                         <input type="radio" name="clr3" style="--c: orange;">
                         <input type="radio" name="clr3" style="--c: orange;">
                         <input type="radio" name="clr3" style="--c: orange;">
@@ -323,6 +325,7 @@
 
     </div>
 
+
     <footer>
         <!-- Footer -->
         <footer class="text-center text-lg-start bg-white text-muted">
@@ -448,6 +451,8 @@
         </footer>
         <!-- Footer -->
     </footer>
+
+
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

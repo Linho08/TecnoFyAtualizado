@@ -1,3 +1,23 @@
+// INICIO BODY
+
+function carregou() {
+    console.log('Página carregada com sucesso')
+}
+
+// FINAL BODY
+
+
+// INICIO HEADER (CABECALHO)
+function logo() {
+    console.log('Foco na Logo')
+}
+
+// FINAL HEADER
+
+
+// INICIO ARTICLE (CORPO)
+
+/* Carrossel */
 (function () {
     "use strict";
 
@@ -29,8 +49,16 @@
     (function ($) {
         carousels();
     })(jQuery);
-})();
+})
+/* FINAL CARROSSEL */
 
+
+// FINAL ARTICLE
+
+
+// INICIO FOOTER (RODAPE)
+
+/* TECNOFY transicao */
 const buttonsComponent = document.querySelector('.buttons');
 const buttonsToggle = document.querySelector('.buttons__toggle');
 
@@ -41,3 +69,5 @@ function toggleButtons() {
     buttonsComponent.classList.toggle('buttons--active');
     document.activeElement.blur();
 }
+
+// FINAL FOOTER

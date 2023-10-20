@@ -1,26 +1,44 @@
-/* Redefinir estilos padrão */
+/* Inicio padrao */
 * {
-    padding: 0; /* Remover padding */
-    margin: 0; /* Remover margin */
-    box-sizing: border-box; /* Add preenchimento e borda na largura e altura total do elemento */
-    letter-spacing: 1px; /* Add espaço entre as letras */
-    line-height: 1.6em; /* Defina a altura da linha para melhor legibilidade */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    line-height: 1.6em;
 }
 
 html {
-    scroll-behavior: smooth; /* Rolagem suave para toda a página */
+    scroll-behavior: smooth;
 }
 
 body {
-    overflow-x: hidden; 
-    background-color: blanchedalmond; 
-    font-size: 1rem; 
+    overflow-x: hidden;
+    font-size: 1rem;
+    --s: 82px;
+    --c1: #b2b2b2;
+    --c2: #ffffff;
+    --c3: #d9d9d9;
+
+    --_g: var(--c3) 0 120deg, #0000 0;
+    background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)),
+        conic-gradient(from 120deg at 50% calc(200% / 3), var(--_g)),
+        conic-gradient(from 60deg at calc(200% / 3),
+            var(--c3) 60deg,
+            var(--c2) 0 120deg,
+            #0000 0),
+        conic-gradient(from 180deg at calc(100% / 3), var(--c1) 60deg, var(--_g)),
+        linear-gradient(90deg,
+            var(--c1) calc(100% / 6),
+            var(--c2) 0 50%,
+            var(--c1) 0 calc(500% / 6),
+            var(--c2) 0);
+    background-size: calc(1.732 * var(--s)) var(--s);
 }
 
-.fa-solid:hover {
-    transition: 0.2s;
-}
+/* Final Padrao */
 
+
+/* Inicio Layout */
 main {
     display: grid;
     grid-template-areas:
@@ -30,6 +48,10 @@ main {
     grid-template-rows: auto auto auto;
 }
 
+/* Final Layout */
+
+
+/* Inicio Header */
 header {
     grid-area: header;
     margin: 0px 0px 10px 0px;
@@ -38,44 +60,29 @@ header {
     padding: 0.5rem 7rem;
 }
 
-#icon-user {
-    color: black;
-}
-
-#icon-user:hover {
-    color: white;
-    transition: 0.3s;
-}
-
 #logo {
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
 }
 
+/* Final Header */
+
+
+/* Inicio Artigo */
 article {
     grid-area: article;
     margin: 0px 10px;
 }
 
+/* Cards Notícias */
 #card-info {
     color: white;
     border: 1px solid #646464;
     background: #004AAD;
 }
 
-#card-curso {
-    color: white;
-    border: 1px solid #646464;
-    background: #004AAD;
-}
-
-footer {
-    grid-area: footer;
-    background: rgb(93, 224, 230);
-    background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
-}
-
+/* Parte de Nossos Cursos */
 .jumbotron {
     color: white;
     display: grid;
@@ -85,27 +92,19 @@ footer {
     background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
 }
 
-.btn:hover {
-    background-color: #004AAD;
-    border: 2px solid #004AAD;
-    color: #5DE0E6;
-}
-
-.btn-outline-success {
-    color: #004AAD;
-    background-color: transparent;
-    background-image: none;
-    border-color: #004AAD;
-}
-
-#redes {
+#card-curso {
     color: white;
-    font-family: 'Merriweather', sans-serif;
+    border: 1px solid #646464;
+    background: #004AAD;
 }
+/* Final Artigo */
 
-#footer_company {
-    color: white;
-    font-family: 'Arvo', sans-serif;
+
+/* Inicio Footer */
+footer {
+    grid-area: footer;
+    background: rgb(93, 224, 230);
+    background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
 }
 
 #titulo {
@@ -147,7 +146,12 @@ footer {
     color: rgb(112, 112, 112);
 }
 
-/* === removing default button style ===*/
+/* Final Footer */
+
+
+/* Inicio transicao */
+
+/* removendo o estilo padrao do botao */
 .button {
     margin: 0;
     height: auto;
@@ -156,7 +160,7 @@ footer {
     border: none;
 }
 
-/* button styling */
+/* estilo de botao */
 .button {
     --border-right: 6px;
     --text-stroke-color: rgba(255, 255, 255, 0.6);
@@ -172,7 +176,7 @@ footer {
     -webkit-text-stroke: 1px var(--text-stroke-color);
 }
 
-/* this is the text, when you hover on button */
+/* texto com transicao */
 .hover-text {
     position: absolute;
     box-sizing: border-box;
@@ -186,8 +190,9 @@ footer {
     -webkit-text-stroke: 1px var(--animation-color);
 }
 
-/* hover */
+/* transicao */
 .button:hover .hover-text {
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color))
 }
+/* fim da transicao */

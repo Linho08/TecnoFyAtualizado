@@ -1,3 +1,4 @@
+/* INICIO PADRAO */
 * {
     padding: 0;
     margin: 0;
@@ -11,97 +12,86 @@ html {
 }
 
 body {
-    background: rgb(93, 224, 230);
-    background: linear-gradient(90deg, #004AAD 20%,
-            #5DE0E6 80%);
+    --s: 82px;
+    --c1: #b2b2b2;
+    --c2: #ffffff;
+    --c3: #d9d9d9;
+
+    --_g: var(--c3) 0 120deg, #0000 0;
+    background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)),
+        conic-gradient(from 120deg at 50% calc(200% / 3), var(--_g)),
+        conic-gradient(from 60deg at calc(200% / 3),
+            var(--c3) 60deg,
+            var(--c2) 0 120deg,
+            #0000 0),
+        conic-gradient(from 180deg at calc(100% / 3), var(--c1) 60deg, var(--_g)),
+        linear-gradient(90deg,
+            var(--c1) calc(100% / 6),
+            var(--c2) 0 50%,
+            var(--c1) 0 calc(500% / 6),
+            var(--c2) 0);
+    background-size: calc(1.732 * var(--s)) var(--s);
     overflow-x: hidden;
     font-size: 1rem;
+    font-family: 'Arvo', sans-serif;
 }
-
-.navbar-toggler-icon {
-    border: 2px solid #004AAD;
-}
-
-#pg {
-    font-family: "Arvo", sans-serif;
-}
-
-#navbarDropdown {
-    font-family: "Arvo", sans-serif;
-}
-
-.dropdown-item {
-    font-family: "Arvo", sans-serif;
-}
+/* FINAL PADRAO */
 
 
-::placeholder {
-    font-family: "Arvo", sans-serif;
-}
-
-#facebook {
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-}
-
-#nav-two {
-    background-color: white;
-    height: 3rem;
-    align-items: center;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#teste {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(Images/TecnologiaBackground.avif);
-}
-
-#cadeado {
-    width: 15rem;
-    animation: floating 6s ease-out infinite;
-}
-
-@keyframes floating {
-    0% {
-        transform: translateY(0) rotate(0);
-    }
-
-    50% {
-        transform: translateY(-25px) rotate(4deg);
-    }
-
-    100% {
-        transform: translateY(0) rotate(0);
-    }
-}
-
-.jumbotron {
-    color: white;
+/* INICIO LAYOUT */
+main {
     display: grid;
-    justify-content: center;
-    align-items: center;
+    grid-template-areas:
+        "header header header"
+        "article article article"
+        "footer footer footer";
+    grid-template-rows: auto auto auto;
+}
+
+/* FINAL LAYOUT */
+
+
+/* INICIO HEADER */
+header {
+    grid-area: header;
+    margin: 0px 0px 10px 0px;
     background: rgb(93, 224, 230);
     background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
+    padding: 0.5rem 7rem;
 }
 
-.btn:hover {
-    background-color: #004AAD;
-    border: 2px solid #004AAD;
-    color: #5DE0E6;
+#icon-user {
+    color: black;
 }
 
-.btn-outline-success {
-    color: #004AAD;
-    background-color: transparent;
-    background-image: none;
-    border-color: #004AAD;
+#icon-user:hover {
+    color: white;
+    transition: 0.3s;
 }
+
+#logo {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+/* FINAL HEADER */
+
+
+/* INICIO ARTIGOS */
+article {
+    grid-area: article;
+    margin: 0px 10px;
+}
+
+#foto-padrao {
+    height: 600px;
+}
+/* FINAL ARTIGOS */
+
+
+/* INICIO FOOTER */
+footer {
+    grid-area: footer;
+    
+}
+/* FINAL FOOTER */

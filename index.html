@@ -23,14 +23,12 @@
 
 </head>
 
-<body>
-    <main class="container_nav">
-
-        <script src="main.js"></script>
+<body onLoad='carregou()'>
+    <main class="container_nav" id="tela-principal">
 
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#"><img src="Images/TecnoFy_Logo.png" id="logo" alt="">
+                <a class="navbar-brand" href="#" onMouseOver='logo()'><img src="Images/TecnoFy_Logo.png" id="logo" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
@@ -68,6 +66,8 @@
                         <i class="fa-solid fa-user fa-2xl"></i>
                     </a>
 
+                    <br>
+
                     <a href="#">
                         <i class="fa-solid fa-gear fa-2xl"></i>
                     </a>
@@ -75,10 +75,10 @@
             </nav>
         </header>
 
+
         <article>
 
-            <div class="container-teste"></div>
-
+            <!-- Inicio Carrossel -->
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> <!-- Início Carrossel -->
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -104,10 +104,12 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Próximo</span>
                 </a>
-            </div> <!-- Final Carrossel -->
+            </div> 
+            <!-- Final Carrossel -->
 
             <br>
 
+            <!-- Inicio Titulo de Boas Vindas -->
             <div class="jumbotron">
                 <h1 class="display-4">
                     Bem Vindo ao TecnoFy!
@@ -128,9 +130,11 @@
                 </p>
                 <a class="btn btn-primary btn-lg" href="#cursos" role="button">Veja mais sobre os cursos</a>
             </div>
+            <!-- Final Titulo de Boas Vindas -->
 
             <br>
 
+            <!-- Inicio Cards Noticia 1 -->
             <div class="card-deck">
                 <div class="card" id="card-info">
                     <a href="https://distrito.me/blog/novas-tecnologias-quais-as-tendencias-para-2023/">
@@ -189,9 +193,11 @@
                     </div>
                 </div>
             </div>
+            <!-- Final Cards Noticia 1 -->            
 
             <br>
 
+            <!-- Inicio Cards Noticia 2 -->
             <div class="card-deck">
                 <div class="card" id="card-info">
                     <a href="https://www.castgroup.com.br/o-que-e-computacao-quantica-e-por-que-ela-e-o-futuro/">
@@ -248,10 +254,12 @@
                     </div>
                 </div>
             </div>
+            <!-- Final Cards Noticia 2 -->
 
             <br>
             <br>
 
+            <!-- Inicio Titulo de Nossos Cursos -->
             <div class="jumbotron jumbotron-fluid" id="cursos">
                 <div class="container">
                     <h1 class="display-4">
@@ -263,17 +271,20 @@
                     </p>
                 </div>
             </div>
+            <!-- Final Titulo de Nossos Cursos -->
 
+            <!-- Inicio Cursos -->
             <div class="card-columns">
-                <div class="card text-center    " id="card-curso">
+                <div class="card text-center" id="card-curso">
                     <div class="card-body">
                         <h5 class="card-title">
                             Levantamento e Análise de Requisitos
                         </h5>
                         <p class="card-text">
-                            Este é um card com suporte a texto embaixo, que funciona como uma
-                            introdução a
-                            um conteúdo adicional.
+                            Durante o curso, os alunos aprendem técnicas para coletar informações dos stakeholders, como
+                            clientes e usuários finais, e transformar esses dados em requisitos claros e detalhados.
+                            Isso envolve a utilização de ferramentas de modelagem, entrevistas, questionários e análise
+                            de processos.
                         </p>
                     </div>
                 </div>
@@ -284,9 +295,9 @@
                             Análise de Finanças
                         </h5>
                         <p class="card-text">
-                            Este é um card com suporte a texto embaixo, que funciona como uma
-                            introdução a
-                            um conteúdo adicional.
+                            o curso abrange tópicos como orçamento, planejamento financeiro, gestão de riscos e
+                            investimentos. Os participantes aprendem a tomar decisões financeiras informadas e a
+                            desenvolver estratégias para melhorar a saúde financeira de uma organização.
                         </p>
                     </div>
                 </div>
@@ -297,9 +308,10 @@
                             Design de Projetos
                         </h5>
                         <p class="card-text">
-                            Este é um card com suporte a texto embaixo, que funciona como uma
-                            introdução a
-                            um conteúdo adicional.
+                            O foco principal desse tipo de curso é o processo de criação, que envolve identificar
+                            necessidades, definir metas, conceber ideias, planejar a execução e comunicar a visão do
+                            projeto. Além disso, os participantes aprendem a usar ferramentas de design, como software
+                            de modelagem 3D, programas de edição de imagem, CAD, entre outros.
                         </p>
                     </div>
                 </div>
@@ -310,9 +322,10 @@
                             Suporte, Manutenção e Atualização
                         </h5>
                         <p class="card-text">
-                            Este é um card com suporte a texto embaixo, que funciona como uma
-                            introdução a
-                            um conteúdo adicional.
+                            Essa formação aborda a importância de garantir a estabilidade e segurança de sistemas,
+                            hardware ou software, e também fornece conhecimentos sobre as melhores práticas de suporte
+                            ao usuário. Os alunos aprendem a lidar com questões técnicas, interagir com clientes ou
+                            usuários, e manter registros precisos de atividades de suporte.
                         </p>
                     </div>
                 </div>
@@ -323,9 +336,11 @@
                             Desenvolvimento de Sistemas
                         </h5>
                         <p class="card-text">
-                            Este é um card com suporte a texto embaixo, que funciona como uma
-                            introdução a
-                            um conteúdo adicional.
+                            Os tópicos abordados geralmente incluem o ciclo de vida de desenvolvimento de software,
+                            design de bancos de dados, desenvolvimento web, segurança da informação e gerenciamento de
+                            projetos de software. Os alunos também ganham experiência na resolução de problemas
+                            complexos e no trabalho em equipe, habilidades essenciais para o desenvolvimento de sistemas
+                            de qualidade.
                         </p>
                     </div>
                 </div>
@@ -336,13 +351,16 @@
                             Implementação e Documentação
                         </h5>
                         <p class="card-text">
-                            Este é um card com suporte a texto embaixo, que funciona como uma
-                            introdução a
-                            um conteúdo adicional.
+                            O foco principal desse tipo de curso é a execução eficaz, abrangendo tópicos como gestão de
+                            projetos, acompanhamento de processos, garantia de qualidade e documentação adequada. Os
+                            alunos aprendem a criar registros, relatórios e manuais que descrevem as etapas da
+                            implementação, facilitando a comunicação e o entendimento por parte dos envolvidos.
                         </p>
                     </div>
                 </div>
             </div>
+            <!-- Final Cursos -->
+
         </article>
 
 
@@ -477,6 +495,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+        
+    <script src="main.js"></script>
+
 
 </body>
 
