@@ -13,7 +13,7 @@
                     items: 1,
                     nav: false
                 },
-                680: {
+                1000: {
                     items: 2,
                     nav: false,
                     loop: false
