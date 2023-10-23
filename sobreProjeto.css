@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Arvo', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #263138;
+}
+
+/* Começo Header */
+header {
+    grid-area: header;
+    margin: 0px 0px 10px 0px;
+    background: rgb(93, 224, 230);
+    background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
+    padding: 0.5rem 7rem;
+}
+
+#icon-user {
+    color: black;
+}
+
+#icon-user:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+#logo {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+article {
+    grid-area: article;
+    margin: 0px 10px;
+}
+
+/* Primeira Página */
+
+#começo {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 24px 80px 128px 80px;
+    position: flex;
+}
+
+h1, h2 {
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 32px;    
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.paragrafo {
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+
+.btn {
+    background-color: #5DE0E6;
+    border-radius: 8px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+.btn-transparente {
+    background-color: transparent;
+    color: #004AAD;
+    padding: 16px 32px;
+    text-underline-offset: 4px;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+}
+
+/* Fim da Primeira página */
+
+#nossoSite {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+}
+
+#nossoSite li {
+    margin-bottom: 16px;
+    margin-left: 32px;
+}
+
+/* Fim da nossoSite */
+
+#projeto {
+    padding: 64px 80px;
+    text-align: center;
+}
+
+#projeto img {
+    margin: 64px auto;
+}
+
+#projeto .paragrafo {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/* Fim do Projeto ksksksks */
+
+#duvidas {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+}
+
+.duvida {
+    position: relative;
+}
+.duvida h3 {
+    border: 2px solid #5DE0E6;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px;
+}
+
+.duvida img {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+}
+
+.duvida .paragrafo {
+    border-bottom: 1px solid #5DE0E6;
+    border-left: 1px solid #5DE0E6;
+    border-right: 1px solid #5DE0E6;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 0 24px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.duvida.ativa .paragrafo {
+    height: fit-content;
+    opacity: 1;
+    padding: 24px;
+}
+
+/* Fim da duvidas */
+
+/* FOOTER... */
+
+/* Fim do Footer */
+
+/* @media screen and (max-width: 768px){
+    .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+ }
+ .h1,
+ .h2{
+    text-align: center;
+    line-height: 10%;
+    max-width: 500px;
+    font-size: 36px;
+ }
+ .p{
+    text-align: center;
+    margin: 8px 0;
+ }
+ .img {
+    width: 80%;
+ }
+ .content{
+    flex-direction: column;
+}
+}
+
+*/
+
+
+ @media screen and (max-width: 768px) {
+    header {
+        padding: 0.5rem 2rem;
+    }
+    
+    #começo {
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px 24px 128px 24px;
+    }
+
+    #nossoSite {
+        flex-direction: column;
+        gap: 16px;
+        padding: 64px 24px;
+    }
+
+    #nossoSite li {
+        margin-left: 0;
+    }
+
+    #projeto {
+        padding: 64px 24px;
+    }
+
+    #projeto img {
+        margin: 32px auto;
+
+    }
+
+    #duvidas img {
+        margin: 32px auto;
+        display: none;
+        width: auto;
+    }
+    #duvidas {
+        flex-direction: column;
+        gap: 16px;
+        padding: 64px 14px;
+    }
+
+    .duvida .paragrafo {
+        padding: 24px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    header {
+        padding: 0.5rem 1rem;
+    }
+
+    #começo {
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px 16px 128px 16px;
+    }
+
+    #nossoSite {
+        flex-direction: column;
+        gap: 16px;
+        padding: 64px 30px;
+    }
+
+    #nossoSite li {
+        margin-left: 0;
+    }
+
+    #nossoSite img {
+        max-height: 320px;
+    }
+    #projeto {
+        padding: 64px 16px;
+    }
+
+    #duvidas {
+        flex-direction: column;
+        gap: 16px;
+        padding: 64px 16px;
+    }
+
+    .duvida .paragrafo {
+        padding: 24px;
+    }
+
+    .duvida img {
+        position: static;
+        margin: 32px auto;
+    }
+
+    .duvida button {
+        width: 10%;
+        margin-top: 16px;
+    }
+}
+
+
+
+/*  @media (width < 900px){
+    header{
+        grid-template-columns: repeat(1,1fr);
+    }
+    main .img{
+        grid-area: 1/1/2/2;
+    }
+    #duvidas {
+        flex-direction: row;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+*/
