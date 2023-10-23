@@ -106,6 +106,17 @@ footer {
   color: white;
   background: #004AAD;
 }
+
+.content{
+  justify-content: center;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  position: relative;
+}
+
+
 .card-link {
   color: #5DE0E6;
 }
