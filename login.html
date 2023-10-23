@@ -24,36 +24,29 @@
 </head>
 
 <body>
-
-    <div class="login-box">
-        <div class="cont-top">
-            <h2>
-                Login
-            </h2>
-            <a href="indexblog.html" class="saida">
-                <i class="fa-solid fa-xmark fa-bounce fa-2xl"></i>            </a>
+    <div class="main-login">
+        <div class="left-login">
+            <h1> Faça Login <br> Para ver as novidades </h1>
+            <img src="Images/LoginAnimation.svg" alt="Login Animação" class="left-login-image">
         </div>
-        <form>
-            <div class="user-box">
-                <input type="text" name="E-mail" required="true">
-                <label>E-mail</label>
+
+        <div class="right-login">
+            <div class="card-login">
+                <h1> LOGIN </h1>
+                <div class="textfield">
+                    <label for="usuario"> Usuário </label>
+                    <input type="text" name="usuario" placeholder="Usuário">
+                </div>
+
+
+                <div class="textfield">
+                    <label for="senha"> Senha </label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                <button class="btn-login">Login</button>
+                <span class="cadastrar"> Novo por aqui? <a href="cadastro.html" class="button-register">Cadastre-se</a>
             </div>
-            <div class="user-box">
-                <input type="password" name="Senha" required="">
-                <label>Senha</label>
-            </div>
-            <div>
-                <span class="registrar"> Novo por aqui? <a href="cadastro.html" class="button-register">Cadastre-se</a>
-                    agora! </span>
-            </div>
-            <a href="indexblog.html" class="button">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Confirmar
-            </a>
-        </form>
+        </div>
     </div>
 </body>
 

@@ -1,3 +1,5 @@
+AOS.init();
+
 // INICIO BODY
 
 function carregou() {
