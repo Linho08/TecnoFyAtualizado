@@ -17,9 +17,8 @@ body * {
 
 .main-login {
     width: 100vw;
-    height: 100vh;
-    background: #004AAD;
-    /* background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%); */
+    background: url(Images/WaveImage.png) no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,8 +38,13 @@ body * {
     cursor: pointer;
     display: flex;
 }
-.left-login>h1 {
-    color: #5CC3E6;
+
+.titulo {
+    text-align: justify;
+}
+
+.titulo>h1 {
+    color: #FFFFFF;
     font-size: 3vw;
 }
 
@@ -63,13 +67,13 @@ body * {
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: #004AAD;
+    background: #10094F;
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
 }
 
 .card-login>h1 {
-    color: #5CC3E6;
+    color: #5DE0E6;
     font-weight: 800;
     margin: 0;
 }
@@ -88,8 +92,8 @@ body * {
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background: #6F7FF2;
-    color: #f0ffffde;
+    background: #ffffff;
+    color: black;
     font-size: 12pt;
     text-align: center;
     box-shadow: 0px 10px 40px #00000056;
@@ -103,11 +107,13 @@ body * {
 }
 
 .textfield>input::placeholder {
-    color: #f0ffff94;
+    color: #10094F;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .btn-login {
-    width: 100%;
+    width: 80%;
     padding: 16px 0px;
     margin: 25px;
     border: none;
@@ -117,9 +123,19 @@ body * {
     outline: none;
     font-weight: 800;
     letter-spacing: 3px;
-    color: #2b134b;
-    background: #5CC3E6;
-    box-shadow: 0px 10px 40px -12px #2400AD;
+    color: #10094F;
+    background: #5DE0E6;
+    box-shadow: 0px 10px 40px -12px #419a9e;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #56cdd3;
+    box-shadow: 0px 10px 40px -12px #5fdee4;
+    transition: 0.3s;
+    width: 90%;
+    padding: 20px 0px;
+    font-size: 20px;
 }
 
 span {
@@ -128,13 +144,14 @@ span {
 
 .button-register {
     text-decoration: underline;
-    color: #5CC3E6;
+    color: #5DE0E6;
+    transition: 0.3s;
 }
 
 .button-register:hover {
     text-decoration: none;
-    transition: 0.2s;
-    padding: 16px 0px;
+    transition: 0.3s;
+    padding: 10px 10px;
     margin: 25px;
     border: none;
     border-radius: 8px;
@@ -143,9 +160,9 @@ span {
     outline: none;
     font-weight: 800;
     letter-spacing: 3px;
-    color: #2b134b;
-    background: #5CC3E6;
-    box-shadow: 0px 10px 40px -12px #2400AD;
+    color: #10094F;
+    background: #5DE0E6;
+    box-shadow: 0px 10px 40px -12px #10094F;
 }
 
 @media only screen and (max-width: 950px) {
@@ -159,7 +176,7 @@ span {
         flex-direction: column;
     }
 
-    .left-login>h1 {
+    .left-login>.titulo {
         display: none;
     }
 
@@ -175,6 +192,7 @@ span {
 
     .left-login-image {
         width: 50vw;
+        margin: 10px;
     }
 
     .card-login {
