@@ -87,6 +87,13 @@ footer {
     background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
 }
 
+.btn {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+} 
+
 /*Rating*/
 .slider {
     -webkit-appearance: none;
