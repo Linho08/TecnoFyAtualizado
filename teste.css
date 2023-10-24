@@ -191,12 +191,13 @@ article {
     letter-spacing: 3px;
     color: #10094F;
     background: #5DE0E6;
-    box-shadow: 0px 10px 40px -12px #10094F;
+    box-shadow: 0px 10px 40px -12px #419a9e;
     transition: 0.3s;
 }
 
 .btn-login:hover {
-    background: #45a5aa;
+    background: #56cdd3;
+    box-shadow: 0px 10px 40px -12px #5fdee4;
     transition: 0.3s;
     width: 90%;
     padding: 20px 0px;
@@ -241,7 +242,7 @@ span {
         flex-direction: column;
     }
 
-    .left-login>h1 {
+    .left-login>.titulo {
         display: none;
     }
 
@@ -256,12 +257,14 @@ span {
     }
 
     .left-login-image {
-        width: 50vw;
+        display: none;
     }
 
     .card-login {
         width: 90%;
     }
+
+
 }
 
 /* Final Login */
