@@ -15,25 +15,6 @@ body {
     font-size: 1rem;
     width: 100%;
     height: 100%;
-    --s: 82px;
-    --c1: #b2b2b2;
-    --c2: #ffffff;
-    --c3: #d9d9d9;
-
-    --_g: var(--c3) 0 120deg, #0000 0;
-    background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)),
-        conic-gradient(from 120deg at 50% calc(200% / 3), var(--_g)),
-        conic-gradient(from 60deg at calc(200% / 3),
-            var(--c3) 60deg,
-            var(--c2) 0 120deg,
-            #0000 0),
-        conic-gradient(from 180deg at calc(100% / 3), var(--c1) 60deg, var(--_g)),
-        linear-gradient(90deg,
-            var(--c1) calc(100% / 6),
-            var(--c2) 0 50%,
-            var(--c1) 0 calc(500% / 6),
-            var(--c2) 0);
-    background-size: calc(1.732 * var(--s)) var(--s);
 }
 
 header {
@@ -94,13 +75,17 @@ footer {
     font-weight: bold;
 } 
 
+.icon {
+    position: right;
+}
+
 /*Rating*/
 .slider {
     -webkit-appearance: none;
     width: 100%;
     height: 10px;
     border-radius: 5px;
-    background-color: #0004ff;
+    background-color: #ffffff;
     background-image: linear-gradient(43deg, #33ff00 0%, #fbff00 46%, #ff0000 100%);
     outline: none;
     opacity: 0.7;
@@ -114,8 +99,7 @@ footer {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #000000;
-    background-image: linear-gradient(160deg, #000000 0%, #000000 100%);
+    background-color: #ffffff;
     cursor: pointer;
 }
 
@@ -123,8 +107,7 @@ footer {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #000000;
-    background-image: linear-gradient(160deg, #000000 0%, #000000 100%);
+    background-color: #ffffff;
     cursor: pointer;
 }
 
@@ -156,7 +139,7 @@ footer {
 .form-teste {
     display: grid; 
     justify-items: center;
-    background: linear-gradient(180deg, #004AAD 20%, #5DE0E6 80%);
+    background: #004AAD;
     color: white;
     margin: 30px 30px;
     padding: 15px 15px;
@@ -170,9 +153,32 @@ footer {
 
 }
 
-.botao-form {
-    font-size: 1em;
-    justify-items: center;
-    text-align: center;
+input.s{
+    width: 250px;
+    background-color: #5DE0E6;
+    color: #004AAD;
+    border-radius: 20px;
     cursor: pointer;
+    border: none;
+    font-weight: bold;
+    align-items: center;
+    padding: 5px;
 }
+.s:hover{
+    background-color: transparent;
+    color: #5DE0E6;
+}
+input.r{
+    width: 250px;
+    background-color: #5DE0E6;
+    color: #004AAD;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    padding: 5px;
+}
+.r:hover{
+    background-color: transparent;
+    color: #5DE0E6;
+}    
