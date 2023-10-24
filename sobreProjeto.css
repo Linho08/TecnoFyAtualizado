@@ -46,8 +46,13 @@ article {
     gap: 32px;
     padding: 24px 80px 128px 80px;
     position: flex;
+    width: 100vw;
+    justify-content: center;
 }
 
+#começo .rounded {
+    width: 35vw;
+}
 h1, h2 {
     font-weight: 600;
     font-size: 32px;
@@ -196,9 +201,12 @@ h3 {
 */
 
 
- @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     header {
         padding: 0.5rem 2rem;
+    }
+    .absolute{
+        opacity : -10;
     }
     
     #começo {
@@ -206,7 +214,10 @@ h3 {
         gap: 16px;
         padding: 24px 24px 128px 24px;
     }
-
+    #começo .rounded {
+        width: 450px;
+    }
+    
     #nossoSite {
         flex-direction: column;
         gap: 16px;
@@ -224,6 +235,9 @@ h3 {
     #projeto img {
         margin: 32px auto;
 
+    }
+    #nossoSite img {
+        margin: 32px auto;
     }
 
     #duvidas img {
@@ -245,7 +259,7 @@ h3 {
 
 @media screen and (max-width: 450px) {
     header {
-        padding: 0.5rem 1rem;
+        padding: 7px
     }
 
     #começo {
@@ -253,7 +267,9 @@ h3 {
         gap: 16px;
         padding: 24px 16px 128px 16px;
     }
-
+    #começo .rounded {
+        width: auto;
+    }
     #nossoSite {
         flex-direction: column;
         gap: 16px;
@@ -274,11 +290,11 @@ h3 {
     #duvidas {
         flex-direction: column;
         gap: 16px;
-        padding: 64px 16px;
+        padding: 34px 16px;
     }
 
     .duvida .paragrafo {
-        padding: 24px;
+        padding: 12px;
     }
 
     .duvida img {
@@ -287,23 +303,80 @@ h3 {
     }
 
     .duvida button {
-        width: 10%;
+        width: 5%;
         margin-top: 16px;
     }
+    h3 {
+        font-size: 18px; 
+    }
+    .absolute {
+        
+        bottom: 100;
+        left: 0;
+        width: 100%;
+        z-index: -10;
+    }
 }
 
 
 
-/*  @media (width < 900px){
-    header{
-        grid-template-columns: repeat(1,1fr);
+ @media (max-width: 350px){
+    header {
+        padding: 24px 80px 128px 80px;
     }
-    main .img{
-        grid-area: 1/1/2/2;
+    
+    #começo {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px 16px 128px 16px;
     }
+
+    #nossoSite {
+        flex-direction: column;
+        gap: 16px;
+        padding: 64px 30px;
+    }
+
+    #nossoSite li {
+        margin-left: 0;
+    }
+
+    #nossoSite img {
+        max-height: 200px;
+    }
+    #projeto {
+        padding: 64px 16px;
+    }
+
     #duvidas {
-        flex-direction: row;
-        grid-template-columns: repeat(2,1fr);
+        flex-direction: column;
+        gap: 16px;
+        padding: 34px 16px;
+    }
+
+    .duvida .paragrafo {
+        padding: 12px;
+    }
+
+    .duvida img {
+        position: static;
+        margin: 32px auto;
+    }
+
+    .duvida button {
+        width: 5%;
+        margin-top: 16px;
+    }
+    h3 {
+        font-size: 18px; 
+    }
+    .absolute {
+        
+        bottom: 100;
+        left: 0;
+        width: 100%;
+        z-index: -10;
     }
 }
-*/
