@@ -22,6 +22,18 @@ estrela.addEventListener('click', function (event) {
     console.log('Avaliou o curso de Cultura Digital')
 })
 
+// READ MORE
+var button = document.getElementById('leia_button')
+
+button.addEventListener ('click', function() {
+    var card = document.querySelector('.card');
+    card.classList.toogle('active');
+
+    if (card.classList.contains('active')) {
+        return button.textContent = "Ler menos";
+    }
+    button.textContent = "Leia mais";
+});
 
 // INICIO FOOTER (RODAPE)
 
