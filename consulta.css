@@ -17,6 +17,47 @@ body {
     height: 100%;
 }
 
+/* Header */
+header {
+    grid-area: header;
+    margin: 0px 0px 10px 0px;
+    background-color: #0B37B4;
+    padding: 0.5rem 7rem;
+  }
+  
+  #logo {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  #logo:hover {
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 5px 5px;
+    margin: 25px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    color: #10094F;
+    background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
+    box-shadow: 0px 10px 40px -12px #2400AD;
+  }
+  
+  #icon-login {
+    color: rgba(255, 255, 255, .5);
+    transition: 0.1s;
+  }
+  
+  #icon-login:hover {
+    color: rgb(196, 196, 196);
+    transition: 0.1s;
+  }
+
+
+/* Fim do Header */
 header {
     margin: 0px 0px 10px 0px;
     background: rgb(93, 224, 230);
@@ -143,14 +184,6 @@ footer {
     color: white;
     margin: 30px 30px;
     padding: 15px 15px;
-}
-
-#form-teste-2 {
-    
-}
-
-#form-titulo {
-
 }
 
 input.s{
