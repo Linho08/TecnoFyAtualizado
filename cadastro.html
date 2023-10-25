@@ -1,15 +1,17 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,49 +21,52 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>C A D A S T R O</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>L O G I N</title>
 
 </head>
 
-<body>
-    <div class="login-box">
-        <div class="cont-top">
-            <h2>
-                Cadastrar
-            </h2>
-            <a href="indexblog.html" class="saida">
-                <i class="fa-solid fa-xmark fa-bounce fa-2xl"></i>            </a>
+<body onLoad='carregou()'>
+    <div class="main-login">
+        <div class="left-login">
+            <div class="titulo" data-aos="fade-right">
+                <h1 class="titulo-titulo"> Se Cadastre </h1>
+                <h1 class="sub-titulo">E fique por dentro das novidades</h1>
+            </div>
+
+            <img src="Images/LoginImage.svg" alt="Login Animação" class="left-login-image">
         </div>
-        <form>
-            <div class="user-box">
-                <input type="text" name="Usuário" required="true">
-                <label>Usuário</label>
-            </div>
 
-            <div class="user-box">
-                <input type="text" name="E-mail" required="">
-                <label>E-mail</label>
-            </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1> Cadastro </h1>
+                <div class="textfield">
+                    <label for="usuario"> Nome de Usuário </label>
+                    <input type="text" name="usuario" placeholder="Usuário">
+                </div>
 
-            <div class="user-box">
-                <input type="password" name="Senha" required="">
-                <label>Senha</label>
-            </div>
+                <div class="textfield">
+                    <label for="usuario"> E-mail </label>
+                    <input type="text" name="usuario" placeholder="E-mail">
+                </div>
 
-            <div>
-                <span class="logar">
-                    Já tem uma conta? <a href="login.html" class="button-login">Logue-se</a> agora!
-                </span>
+
+                <div class="textfield">
+                    <label for="senha"> Senha </label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                <div class="textfield">
+                    <label for="senha"> Senha </label>
+                    <input type="password" name="senha" placeholder="Confirme a Senha">
+                </div>
+                <button class="btn-login">Cadastro</button>
+                <span class="cadastrar"> Já tem cadastro? <a href="login.html" class="button-register">Faça o Login</a>
             </div>
-            <a href="login.html" class="button">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Confirmar
-            </a>
-        </form>
+        </div>
     </div>
+
+    <script src="login.js"></script>
 
 </body>
 
