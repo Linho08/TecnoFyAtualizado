@@ -79,7 +79,6 @@ header {
 /* Inicio Artigo */
 article {
     grid-area: article;
-    margin: 0px 10px;
 }
 
 /* Cards Notícias */
@@ -97,6 +96,7 @@ article {
     height: 35vh;
 }
 
+/* Início Titulo Card Notícias */
 .titulo-news {
     color: #ffffff;
 }
@@ -104,7 +104,7 @@ article {
 .titulo-news:hover {
     color: #d1d1d1;
     text-decoration: none;
-} 
+}
 
 #titulo-news-1 {
     display: flex;
@@ -132,7 +132,7 @@ article {
     justify-content: center;
     margin: auto;
     font-size: 1.1em;
-    padding: 10px;  
+    padding: 10px;
     background: #a5a5a596;
     font-weight: 800;
     width: 85%;
@@ -229,9 +229,11 @@ article {
     background: #ffffff9c;
     transition: 0.2s;
 }
+/* Final Titulo Card Notícias */
 
 
-/* Parte de Nossos Cursos */
+/* Início de Cursos */
+/* Início titulo nossos cursos */
 .jumbotron {
     color: white;
     display: grid;
@@ -240,31 +242,144 @@ article {
     background: rgb(93, 224, 230);
     background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
 }
+/* Final titulo nossos cursos */
 
-#card-curso {
-    color: white;
-    border: 1px solid #646464;
-    background: #004AAD;
+
+/* Inicio card dropdonw dos cursos */
+#duvidas {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
 }
 
+.duvida {
+    position: relative;
+}
+
+.duvida h3 {
+    border: 2px solid #004AAD;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px;
+}
+
+.duvida img {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+}
+
+.duvida .paragrafo {
+    border-bottom: 1px solid #004AAD;
+    border-left: 1px solid #004AAD;
+    border-right: 1px solid #004AAD;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 0 24px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.duvida.ativa .paragrafo {
+    height: fit-content;
+    opacity: 1;
+    padding: 24px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #duvidas img {
+        margin: 32px auto;
+        display: none;
+        width: auto;
+    }
+
+    #duvidas .duvida {
+        flex-direction: column;
+        gap: 1px;
+        padding: 4px 14px;
+    }
+
+    .duvida .paragrafo {
+        padding: 24px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #duvidas {
+        flex-direction: column;
+        gap: 16px;
+        padding: 34px 16px;
+    }
+
+    .duvida .paragrafo {
+        padding: 12px;
+    }
+
+    .duvida img {
+        position: static;
+        margin: 32px auto;
+    }
+
+    .duvida button {
+        width: 5%;
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 350px) {
+    #duvidas {
+        flex-direction: column;
+        gap: 16px;
+        padding: 34px 16px;
+    }
+
+    .duvida .paragrafo {
+        padding: 12px;
+    }
+
+    .duvida img {
+        position: static;
+        margin: 32px auto;
+    }
+
+    .duvida button {
+        width: 5%;
+        margin-top: 16px;
+    }
+}
+/* Final card dropdonw dos cursos */
+/* Final de Cursos */
 /* Final Artigo */
 
 
 /* Inicio Footer */
 footer {
+    padding: 0 10px;
     grid-area: footer;
     background: rgb(93, 224, 230);
-    background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
+    background: linear-gradient(90deg, #004AAD 20%, #004AAD 80%);
+}
+
+#conjuto {
+    text-align: justify;
 }
 
 #titulo {
     color: white;
     font-family: 'Arvo', sans-serif;
-    text-decoration: underline;
+}
+
+#titulo-contato {
+    color: white;
+    font-family: 'Arvo', sans-serif;
 }
 
 .text-reset {
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Arvo', sans-serif;
     text-decoration: none;
     cursor: pointer;
     color: white;
@@ -281,10 +396,14 @@ footer {
 }
 
 #text-config {
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Arvo', sans-serif;
     text-decoration: none;
     cursor: pointer;
     color: white;
+}
+
+#titulo>li {
+    color: #ffffff;
 }
 
 #text-config:hover {
@@ -292,8 +411,13 @@ footer {
     color: rgb(112, 112, 112);
 }
 
-#icon {
-    color: rgb(112, 112, 112);
+li {
+    margin: 10px;
+    color: white;
+}
+
+#icon-footer {
+    color: white;
 }
 
 /* Final Footer */
