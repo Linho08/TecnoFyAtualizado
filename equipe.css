@@ -1,218 +1,212 @@
 /* INICIO PADRAO */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    letter-spacing: 1px;
-    line-height: 1.6em;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    overflow-x: hidden;
-    font-size: 1rem;
-  }
-  
-  main {
-    display: grid;
-    grid-template-areas:
-      "header header header"
-      "article article article"
-      "footer footer footer";
-    grid-template-rows: auto auto auto;
-  }
-  
-  header {
-    grid-area: header;
-    margin: 0px 0px 10px 0px;
-    background: rgb(93, 224, 230);
-    background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
-    padding: 0.5rem 7rem;
-  }
-  
-  #logo {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
-  }
-  
-  article {
-    grid-area: article;
-    margin: 0px 10px;
-  }
-  
-  footer {
-    grid-area: footer;
-    background: rgb(93, 224, 230);
-    background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
-  }
-  
-  .navbar-toggler-icon {
-    border: 2px solid #004AAD;
-  }
-  
-  #pg {
-    font-family: "Arvo", sans-serif;
-  }
-  
-  #navbarDropdown {
-    font-family: "Arvo", sans-serif;
-  }
-  
-  .dropdown-item {
-    font-family: "Arvo", sans-serif;
-  }
-  
-  ::placeholder {
-    font-family: "Arvo", sans-serif;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 1rem;
+}
+
 /* FINAL PADRAO */
 
 
-/* INICIO LAYOUT */
+main {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "article article article"
+    "footer footer footer";
+  grid-template-rows: auto auto auto;
+}
 
+/* Inicio Header */
+header {
+  grid-area: header;
+  margin: 0px 0px 10px 0px;
+  background-color: #0B37B4;
+  padding: 0.5rem 7rem;
+}
 
-/* FINAL LAYOUT */
+#logo {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  transition: 0.4s;
+}
 
+#logo:hover {
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 5px 5px;
+  margin: 25px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  color: #10094F;
+  background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
+  box-shadow: 0px 10px 40px -12px #2400AD;
+}
 
-/* INICIO HEADER */
+#icon-login {
+  color: rgba(255, 255, 255, .5);
+  transition: 0.1s;
+}
 
-/* FINAL HEADER */
+#icon-login:hover {
+  color: rgb(196, 196, 196);
+  transition: 0.1s;
+
+}
+
+/* Final Header */
 
 
 /* INICIO ARTIGOS */
 article {
-    grid-area: article;
-    margin: 0px 10px;
+  grid-area: article;
+  margin: 0px 10px;
+}
+
+#img-dani {
+  height: 90vh;
 }
 
 .card-body {
-    background-color: #004AAD;
-    color: #ffff;
+  background-color: #004AAD;
+  color: #ffff;
 }
 
 .card-footer {
-    background-color: #5DE0E6;
-    color: #004AAD;
+  background-color: #5DE0E6;
+  color: #004AAD;
 }
 
-
+.text {
+  font-size: 1em;
+  font-weight: 800;
+}
 /* FINAL ARTIGOS */
 
 
 /* Inicio Footer */
 footer {
-    padding: 0 10px;
-    grid-area: footer;
-    background: rgb(93, 224, 230);
-    background: linear-gradient(90deg, #004AAD 20%, #004AAD 80%);
+  padding: 0 10px;
+  grid-area: footer;
+  background: rgb(93, 224, 230);
+  background: linear-gradient(90deg, #004AAD 20%, #004AAD 80%);
 }
 
 #conjuto {
-    text-align: justify;
+  text-align: justify;
 }
 
 #titulo {
-    color: white;
-    font-family: 'Arvo', sans-serif;
+  color: white;
+  font-family: 'Arvo', sans-serif;
 }
 
 #titulo-contato {
-    color: white;
-    font-family: 'Arvo', sans-serif;
+  color: white;
+  font-family: 'Arvo', sans-serif;
 }
 
 .text-reset {
-    font-family: 'Arvo', sans-serif;
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
+  font-family: 'Arvo', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
 }
 
 .text-reset:hover {
-    text-decoration: none;
-    color: rgb(209, 209, 209);
+  text-decoration: none;
+  color: rgb(209, 209, 209);
 }
 
 #text {
-    color: white;
-    font-family: 'Arvo', sans-serif;
+  color: white;
+  font-family: 'Arvo', sans-serif;
 }
 
 #text-config {
-    font-family: 'Arvo', sans-serif;
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
+  font-family: 'Arvo', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
 }
 
 #titulo>li {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 #text-config:hover {
-    text-decoration: none;
-    color: rgb(112, 112, 112);
+  text-decoration: none;
+  color: rgb(112, 112, 112);
 }
 
 li {
-    margin: 10px;
-    color: white;
+  margin: 10px;
+  color: white;
 }
 
 #icon-footer {
-    color: white;
+  color: white;
 }
 
 /* Inicio transicao */
 /* removendo o estilo padrao do botao */
 .button {
-    margin: 0;
-    height: auto;
-    background: transparent;
-    padding: 0;
-    border: none;
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
 }
 
 /* estilo de botao */
 .button {
-    --border-right: 6px;
-    --text-stroke-color: rgba(255, 255, 255, 0.6);
-    --animation-color: #5DE0E6;
-    --fs-size: 2em;
-    letter-spacing: 3px;
-    text-decoration: none;
-    font-size: var(--fs-size);
-    font-family: "Arial";
-    position: relative;
-    text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: 1px var(--text-stroke-color);
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #5DE0E6;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
 }
 
 /* texto com transicao */
 .hover-text {
-    position: absolute;
-    box-sizing: border-box;
-    content: attr(data-text);
-    color: var(--animation-color);
-    width: 0%;
-    inset: 0;
-    border-right: var(--border-right) solid var(--animation-color);
-    overflow: hidden;
-    transition: 0.5s;
-    -webkit-text-stroke: 1px var(--animation-color);
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
 }
 
 /* transicao */
 .button:hover .hover-text {
-    width: 100%;
-    filter: drop-shadow(0 0 23px var(--animation-color))
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
 }
+
 /* fim da transicao */
 /* Final Footer */
-
-
