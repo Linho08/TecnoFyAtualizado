@@ -420,11 +420,7 @@ li {
     color: white;
 }
 
-/* Final Footer */
-
-
 /* Inicio transicao */
-
 /* removendo o estilo padrao do botao */
 .button {
     margin: 0;
@@ -469,5 +465,5 @@ li {
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color))
 }
-
 /* fim da transicao */
+/* Final Footer */

@@ -70,12 +70,116 @@ article {
 /* FINAL ARTIGOS */
 
 
-/* INICIO FOOTER */
+/* Inicio Footer */
 footer {
+    padding: 0 10px;
     grid-area: footer;
-    
+    background: rgb(93, 224, 230);
+    background: linear-gradient(90deg, #004AAD 20%, #004AAD 80%);
 }
-/* FINAL FOOTER */
 
+#conjuto {
+    text-align: justify;
+}
+
+#titulo {
+    color: white;
+    font-family: 'Arvo', sans-serif;
+}
+
+#titulo-contato {
+    color: white;
+    font-family: 'Arvo', sans-serif;
+}
+
+.text-reset {
+    font-family: 'Arvo', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.text-reset:hover {
+    text-decoration: none;
+    color: rgb(209, 209, 209);
+}
+
+#text {
+    color: white;
+    font-family: 'Arvo', sans-serif;
+}
+
+#text-config {
+    font-family: 'Arvo', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+#titulo>li {
+    color: #ffffff;
+}
+
+#text-config:hover {
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+}
+
+li {
+    margin: 10px;
+    color: white;
+}
+
+#icon-footer {
+    color: white;
+}
+
+/* Inicio transicao */
+/* removendo o estilo padrao do botao */
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+
+/* estilo de botao */
+.button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255, 255, 255, 0.6);
+    --animation-color: #5DE0E6;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+/* texto com transicao */
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* transicao */
+.button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+}
+/* fim da transicao */
+/* Final Footer */
 
 
