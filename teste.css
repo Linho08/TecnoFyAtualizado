@@ -81,15 +81,6 @@ article {
     align-items: center;
 }
 
-/* Background Login */
-.absolute {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: -10;
-}
-
 .left-login {
     width: 50vw;
     height: 100vh;
@@ -242,7 +233,7 @@ span {
         flex-direction: column;
     }
 
-    .left-login>.titulo {
+    .left-login>h1 {
         display: none;
     }
 
@@ -257,14 +248,12 @@ span {
     }
 
     .left-login-image {
-        display: none;
+        width: 50vw;
     }
 
     .card-login {
         width: 90%;
     }
-
-
 }
 
 /* Final Login */
