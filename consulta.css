@@ -75,8 +75,28 @@ footer {
     font-weight: bold;
 } 
 
-.icon {
-    position: right;
+.card {
+    margin: 30px;
+    margin: 30px;
+    border-radius: 30%;
+}
+
+.card-header {
+    color: white;
+    background: rgb(93, 224, 230);
+    background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
+}
+
+.card-body {
+    background: #004AAD;
+}
+
+.card-title {
+    color: #5DE0E6;
+}
+
+.card-text {
+    color: white;
 }
 
 /*Rating*/
@@ -112,29 +132,7 @@ footer {
 }
 
 
-.card {
-    margin: 30px;
-    margin: 30px;
-    border-radius: 30%;
-}
 
-.card-header {
-    color: white;
-    background: rgb(93, 224, 230);
-    background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
-}
-
-.card-body {
-    background: #004AAD;
-}
-
-.card-title {
-    color: #5DE0E6;
-}
-
-.card-text {
-    color: white;
-}
 
 .form-teste {
     display: grid; 
@@ -143,14 +141,6 @@ footer {
     color: white;
     margin: 30px 30px;
     padding: 15px 15px;
-}
-
-#form-teste-2 {
-    
-}
-
-#form-titulo {
-
 }
 
 input.s{
