@@ -67,7 +67,6 @@ header {
   transition: 0.1s;
 
 }
-
 /* Final Header */
 
 
@@ -78,7 +77,7 @@ article {
 }
 
 #img-dani {
-  height: 90vh;
+  height: 85vh;
 }
 
 .card-body {
