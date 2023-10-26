@@ -10,29 +10,47 @@ body {
     overflow-x: hidden;
 }
 
-/* Começo Header */
+/* Inicio Header */
 header {
     grid-area: header;
     margin: 0px 0px 10px 0px;
-    background: rgb(93, 224, 230);
-    background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
+    background-color: #0B37B4;
     padding: 0.5rem 7rem;
-}
-
-#icon-user {
-    color: black;
-}
-
-#icon-user:hover {
-    color: white;
-    transition: 0.3s;
 }
 
 #logo {
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
+    transition: 0.4s;
 }
+
+#logo:hover {
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 5px 5px;
+    margin: 25px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    color: #10094F;
+    background: linear-gradient(90deg, #004AAD 20%, #5DE0E6 80%);
+    box-shadow: 0px 10px 40px -12px #2400AD;
+}
+
+#icon-login {
+    color: rgba(255, 255, 255, .5);
+    transition: 0.1s;
+}
+
+#icon-login:hover {
+    color: rgb(196, 196, 196);
+    transition: 0.1s;
+
+}
+
+/* Final Header */
 
 article {
     grid-area: article;
@@ -317,13 +335,6 @@ li {
 /* Final Footer */
 
 @media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-    header {
-        padding: 0.5rem 2rem;
-    }
-
     .absolute {
         opacity: -10;
     }
@@ -388,10 +399,6 @@ li {
 
 
 @media screen and (max-width: 450px) {
-    header {
-        padding: 7px
-    }
-
     #começo {
         flex-direction: column;
         gap: 16px;
@@ -465,9 +472,6 @@ li {
 
 
 @media (max-width: 350px) {
-    header {
-        padding: 24px 80px 128px 80px;
-    }
 
     #começo {
         justify-content: center;
